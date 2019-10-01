@@ -13,6 +13,7 @@ Compared to other solutions, LinkFree is fully customizable and open source!
 - No more pesky third party logos
 - Add your custom colors, images and fonts
 - Create your own template or use one made by the community!
+
 ## How to use?
 To startoff, you can choose a template for your LinkFree in the "Templates" directory. Then you can clone or fork this repository to adapt it with your information.
 
@@ -29,6 +30,13 @@ The downside is that updates to the website will need to be made through accepte
 Another option is to fork this repository to your own account and there configure your personal page using github pages. This will let you make edits much faster.
 
 If you want to still share your LinkFree with the community, you can add its shortened url into the Users readme file.
+
+## How to see statistics?
+You can use any statiscs platform of your choosing that is based on client javascript. We recommend the following:
+- [Amplitude](https://amplitude.com/homepage)
+- [Hotjar](https://www.hotjar.com/)
+
+You can use any of the functions for load and click defined on the javascript file of the LinkFree template or add code snippets to the Head or Body of the HTML file.
 
 ## How to contribute?
 There are a three ways you can contribute. You can make changes to the core LinkFree project, create new LinkFree templates or just share your LinkFree.
