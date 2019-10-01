@@ -1,1 +1,1 @@
-[Browse Templates](https://michaelbarney.github.io/LinkFree/Templates)
+[Standard](https://michaelbarney.github.io/LinkFree/Templates/Standard/)
