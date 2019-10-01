@@ -53,7 +53,7 @@ To submit one, you just have to make a pull request with your addition in the "T
 | User | Instagram |
 |--|--|
 |[Michael Barney](https://github.com/MichaelBarney)| [@michaelbarneyjr](https://www.instagram.com/michaelbarneyjr/) |
-
+|[Izabella Melo](https://github.com/izmcm)|[@izabellacmelo](https://www.instagram.com/izabellacmelo/)|
 
 
 
