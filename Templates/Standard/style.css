@@ -6,7 +6,7 @@
     --font: 'Karla', sans-serif;
 }
 
-.body{
+body{
     background-color: var(--bgColor);
 }
 
