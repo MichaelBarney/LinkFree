@@ -1,8 +1,9 @@
 # LinkFree
-A free and open source alternative to LinkTree
+A free and open source alternative to LinkTree!
+
 [Website](https://michaelbarney.github.io/LinkFree)
 
-![](https://i.imgur.com/B4LX0kY.png =240x)
+<img src="https://i.imgur.com/B4LX0kY.png" alt="alt text" width="250px">
 
 ## What is LinkFree?
 Ever wanted to add more links to your Instagram bio? LinkFree does just that! It gathers all of your links into one page that is easy to navigate.
@@ -10,8 +11,8 @@ Ever wanted to add more links to your Instagram bio? LinkFree does just that! It
 ## What are the bennefits?
 Compared to other solutions, LinkFree is fully customizable and open source!
 - No more pesky third party logos
-- Add your custom colors
-- Create your own template or use one made by the comcunity!
+- Add your custom colors, images and fonts
+- Create your own template or use one made by the community!
 ## How to use?
 To startoff, you can choose a template for your LinkFree in the "Templates" directory. Then you can clone or fork this repository to adapt it with your information.
 

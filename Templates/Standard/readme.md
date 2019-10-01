@@ -1,5 +1,7 @@
 # Standard Template
-![](https://i.imgur.com/B4LX0kY.png =240x)
+
+<img src="https://i.imgur.com/B4LX0kY.png" alt="alt text" width="250px">
+
 ## How to Use
 ### index.html
  1. **Title**
