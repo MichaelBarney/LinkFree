@@ -1,0 +1,63 @@
+/* Style Settings */
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+:root {
+    --bgColor:#FFDFDC;
+    --accentColor: #FF7272;
+    --complementColor: #FFFFFF;
+    --font: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+#userPhoto{
+    width: 110px;
+    height: 110px;
+    display: block;
+    margin: 35px auto 20px;
+    border: 1px;
+    border-radius: 30%;
+    border-style: dotted;
+    border-color: var(--accentColor)
+}
+
+#userName{
+    color: var(--accentColor);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;;
+}
+
+#links{
+    max-width: 500px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+.link{
+    display: block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border-color: var(--complementColor);
+    border: 1px;
+    border-style: dotted;
+    border-radius: 30px;
+}
+
+.link:hover{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
