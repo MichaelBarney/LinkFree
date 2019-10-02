@@ -1,0 +1,73 @@
+/* Style Settings */
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+:root {
+    --bgColor: #F4EED4;
+    --accentColor: #E03A3E;
+    --hoverColor: #963D96;
+    --font: 'Karla', sans-serif;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+#userPhoto{
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+    border: solid var(--bgColor) 2px;
+}
+#rainbow {
+    transform: skewY(-15deg);
+    position: absolute;
+    width: 120%;
+    top: 25%;
+    z-index: -1;
+    box-shadow:
+    0 0 0 35px #E03A3E,
+    0 0 0 65px #FCB827,
+    0 0 0 95px #62BB47,
+    0 0 0 125px #F5831D,
+    0 0 0 155px #009DDC,
+    0 0 0 185px #963D96
+}
+
+#userName{
+    color: var(--bgColor);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #009DDC;
+}
+
+#links{
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+.link{
+    display: block;
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--hoverColor) 3px;
+}
+
+.link:hover{
+    background-color: var(--hoverColor);
+    color: var(--bgColor);
+}
