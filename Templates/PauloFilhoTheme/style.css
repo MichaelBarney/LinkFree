@@ -1,0 +1,25 @@
+body{
+    background:#fff;
+}
+.container{
+    width: 400px;
+    margin: 200px auto 0;
+}
+.container h2{
+    color: #5d37f8;
+    text-align: center;
+    margin-top: 40px;
+    font-family: Poppins,sans-serif;
+    text-transform: uppercase;
+}
+.container h2 a{
+    text-decoration: none;
+    color: #5d37f8;
+    transition: all .6s ease-in-out;
+}
+.container h2 a:hover{
+    text-decoration: underline;
+}
+svg{
+    width: 320px;
+}
