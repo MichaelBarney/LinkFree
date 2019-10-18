@@ -1,0 +1,22 @@
+body{
+    background:rgb(119, 76, 76);
+}
+.container{
+    width: 400px;
+    margin: 200px auto 0;
+}
+.container h2, .container h1{
+    color: #32275f;
+    text-align: center;
+    margin-top: 40px;
+    font-family: Poppins,sans-serif;
+    text-transform: uppercase;
+}
+.container h2 a{
+    text-decoration: none;
+    color: #2f2949;
+    transition: all .6s ease-in-out;
+}
+.container h2 a:hover{
+    text-decoration: underline;
+}
