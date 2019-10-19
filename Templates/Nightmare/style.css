@@ -1,0 +1,68 @@
+/* Style Settings */
+@import url('https://fonts.googleapis.com/css?family=Alice&display=swap');
+:root {
+    --bgColor:#130912;
+    --accentColor: #3d1c33;
+    --detailColor: #DEB314;
+    --fontColor: #bbb;
+    --font:   'Alice', serif;
+}
+
+body{
+    background-color: #2401206e;
+    background-image: url("nmbc.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#userPhoto{
+    width: 110px;
+    height: 110px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+    border: solid var(--fontColor) 4px;
+    box-shadow: 0 0 3px var(--accentColor), 2px 2px 5px var(--bgColor);
+}
+
+#userName{
+    color: var(--accentColor);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: -2px -2px 7px var(--bgColor);
+}
+
+#links{
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+.link{
+    display: block;
+    background-color: var(--accentColor);
+    color: var(--fontColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    text-shadow:var(--detailColor) 2px 2px 8px;
+    font-size: 1rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--fontColor) 2px;
+}
+
+.link:hover{
+    background-color: var(--bgColor);
+    color: var(--fontColor);
+    text-shadow:var(--fontColor) 2px 2px 8px;
+}
