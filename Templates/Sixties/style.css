@@ -1,0 +1,58 @@
+/* Style Settings */
+@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
+:root {
+    --bgColor: beige;
+    --accentColor: #ff0000;
+    --font: 'Modak', cursive;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+#userPhoto{
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 15px;
+}
+
+#userName{
+    color: #ffe600;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 3px 3px 0 var(--accentColor), 1px 1px 0 var(--accentColor), 2px 2px 0 var(--accentColor);
+}
+
+#links{
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+.link{
+    display: block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--accentColor) 2px;
+    border-radius: 15px;
+}
+
+.link:hover{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
