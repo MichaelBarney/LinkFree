@@ -4,3 +4,4 @@
 - [Pride](https://michaelbarney.github.io/LinkFree/Templates/Pride/)
 - [NyanCat](https://michaelbarney.github.io/LinkFree/Templates/NyanCat/)
 - [Nightmare](https://michaelbarney.github.io/LinkFree/Templates/Nightmare/)
+- [Sun&Moon](https://michaelbarney.github.io/LinkFree/Templates/Sun&Moon/)
