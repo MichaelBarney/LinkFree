@@ -53,10 +53,13 @@ main h1 {
   cursor: pointer;
 }
 
-.link a {
+.link span {
+  transform: skewX(45deg);
+}
+
+a {
   color: white;
   text-decoration: none;
-  transform: skewX(45deg);
 }
 
 @media screen and (min-width: 500px) {
