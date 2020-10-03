@@ -17,18 +17,17 @@ body {
 	-webkit-box-shadow: 0px 6px 0px 0px rgba(222, 218, 162, 1);
 	-moz-box-shadow: 0px 6px 0px 0px rgba(222, 218, 162, 1);
 	box-shadow: 0px 6px 0px 0px rgba(222, 218, 162, 1);
+	transition: all 0.15s;
 }
 
 #userPhoto:hover {
 	box-shadow: 0px 8px rgba(222, 218, 162, 1);
-	position: relative;
-	top: -2px;
+	transform: translateY(-2px);
 }
 
 #userPhoto:active {
 	box-shadow: 0px 0px black;
-	position: relative;
-	top: 6px;
+	transform: translateY(6px);
 }
 
 #userName {
@@ -71,20 +70,18 @@ body {
 	text-decoration: none;
 	font-size: 1rem;
 	font-weight: bold;
-	transitionzzz: all .25s cubic-bezier(.08, .59, .29, .99);
+	transition: all 0.15s;
 	box-shadow: 0px 6px #007569;
 }
 
 .link:hover {
 	/* background: #019489; */
 	box-shadow: 0px 8px #007569;
-	position: relative;
-	top: -2px;
+	transform: translateY(-2px);
 }
 
 .link:active {
-	position: relative;
-	top: 6px;
+	transform: translateY(6px);
 	box-shadow: 0px 0px #007569;
 }
 
@@ -112,29 +109,16 @@ body {
 	color: white;
 	margin-bottom: 40px;
 	box-shadow: 0px 6px #9E4355;
+	transition: all 0.15s;
 }
 
 .media:hover {
 	box-shadow: 0px 8px #9E4355;
-	position: relative;
-	top: -2px;
+	transform: translateY(-2px);
 }
 
 .media:active {
-	position: relative;
-	top: 6px;
+	transform: translateY(6px);
 	box-shadow: 0px 0px #9E4355;
-}
-
-.night_mode {
-	position: fixed;
-	top: 25px;
-	right: 30px;
-	z-index: 10000000;
-	color: #fff;
-}
-
-.night_mode:hover {
-	cursor: pointer;
 }
 
