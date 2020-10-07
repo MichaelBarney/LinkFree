@@ -57,6 +57,7 @@ To submit one, you just have to make a pull request with your addition in the "T
 |[Thiago Augusto](https://github.com/thiagoaugustosm)|[@thiagoaugustosm](https://www.instagram.com/thiagoaugustosm/)|
 |[Yesi Aracawa](https://github.com/yesi-aracawa)|[@yesiservi](https://www.instagram.com/yesiservi/)|
 |[Guilherme Soares](https://github.com/guiscota)|[@guiscota](https://www.instagram.com/guiscota/)|
+|[Farell Faiz](https://github.io/farellfaiz)|[@farellfaiz](https://www.instagram.com/farellfaiz/)|
 
 
 

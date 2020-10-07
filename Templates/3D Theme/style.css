@@ -1,0 +1,124 @@
+/* Style Settings */
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+:root {
+	--font: 'Karla', 'Karla', sans-serif;
+}
+
+body {
+	background-color: #0a072e;
+}
+
+#userPhoto {
+	width: 96px;
+	height: 96px;
+	display: block;
+	margin: 35px auto 20px;
+	-webkit-box-shadow: 0px 6px 0px 0px rgba(222, 218, 162, 1);
+	-moz-box-shadow: 0px 6px 0px 0px rgba(222, 218, 162, 1);
+	box-shadow: 0px 6px 0px 0px rgba(222, 218, 162, 1);
+	transition: all 0.15s;
+}
+
+#userPhoto:hover {
+	box-shadow: 0px 8px rgba(222, 218, 162, 1);
+	transform: translateY(-2px);
+}
+
+#userPhoto:active {
+	box-shadow: 0px 0px black;
+	transform: translateY(6px);
+}
+
+#userName {
+	color: white;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.25;
+	display: block;
+	font-family: var(--font);
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+
+#links {
+	max-width: 675px;
+	width: auto;
+	display: block;
+	margin: 27px auto;
+}
+
+@media only screen and (max-width: 700px) {
+	#links {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	.night_mode {
+		margin-right: 40%;
+	}
+}
+
+.link {
+	display: block;
+	background-color: #01A79B;
+	color: #fff;
+	font-family: var(--font);
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 17px;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: all 0.15s;
+	box-shadow: 0px 6px #007569;
+}
+
+.link:hover {
+	/* background: #019489; */
+	box-shadow: 0px 8px #007569;
+	transform: translateY(-2px);
+}
+
+.link:active {
+	transform: translateY(6px);
+	box-shadow: 0px 0px #007569;
+}
+
+#proker {
+	max-width: 300px;
+	width: auto;
+	display: grid;
+	margin: 27px auto;
+}
+
+.footer {
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.media {
+	background: #DD5A79;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	color: white;
+	margin-bottom: 40px;
+	box-shadow: 0px 6px #9E4355;
+	transition: all 0.15s;
+}
+
+.media:hover {
+	box-shadow: 0px 8px #9E4355;
+	transform: translateY(-2px);
+}
+
+.media:active {
+	transform: translateY(6px);
+	box-shadow: 0px 0px #9E4355;
+}
+
