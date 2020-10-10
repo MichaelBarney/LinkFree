@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet');
+
+:root {
+    --font: 'Fira Sans', sans-serif;
+    
+    --background: #282a36;
+    --selection:#44475a;
+    --comment:#6272a4;
+    --purple:#bd93f9;
+    --white:#f8f8f2;
+    --pink:#ff79c6;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--white);
+}
+
+footer{
+    text-align: center;
+
+    color:var(--comment);
+
+    font-family: var(--font);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+#userPhoto{
+    width: 96px;
+    height: 96px;
+
+    display: block;
+
+    margin: 35px auto 20px;
+
+    border-radius: 50%;
+    border: solid var(--purple) 2px;
+}
+
+#userName{
+    width: 100%;
+
+    color: var(--pink);
+
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 400;
+
+    text-align: center;
+    text-decoration: none;
+
+    line-height: 1.25;
+    display: block;
+}
+
+#links{
+    max-width: 675px;
+    width: auto;
+
+    display: block;
+
+    margin: 27px auto;
+}
+.link{
+    display: block;
+    margin-bottom: 20px;
+    padding: 17px;
+
+    background-color: var(--background);
+    color:var(--comment);
+
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 500;
+
+    border-radius: 5px;
+    border: solid var(--purple) 1px;
+
+    text-align: center;
+    text-decoration: none;
+    
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    
+}
+
+.link:hover{
+    background-color: var(--selection);
+    color: var(--purple);
+}
