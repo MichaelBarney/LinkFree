@@ -1,0 +1,122 @@
+/* Style Settings */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --transition-time: 1s;
+  --transition-color: rgba(150, 100, 80, 1);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  background-color: #333;
+}
+
+#userPhoto {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+#userName {
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+#userName h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  margin: 0 auto;
+}
+
+#userName p {
+  font-weight: 300;
+  margin-top: 5px;
+  text-transform: none;
+}
+
+i.fa {
+  margin-right: 0.3rem;
+}
+
+#links {
+  max-width: 500px;
+  width: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.link {
+  display: block;
+  background-color: rgba(66, 110, 255, 0.2);
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 17px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+  border-radius: 10px;
+
+  background-color: #aaa;
+  border: 1px solid transparent;
+  -webkit-animation: glow var(--transition-time) infinite alternate;
+  -webkit-transition: border var(--transition-time) linear,
+    box-shadow var(--transition-time) linear;
+  -moz-transition: border var(--transition-time) linear,
+    box-shadow var(--transition-time) linear;
+  transition: border var(--transition-time) linear,
+    box-shadow var(--transition-time) linear;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+  border: none;
+}
+
+@keyframes glow {
+  0% {
+    border-color: transparent;
+    -webkit-box-shadow: 0 0 10px transparent;
+    -moz-box-shadow: 0 0 10px transparent;
+    box-shadow: 0 0 10px transparent;
+  }
+  20% {
+    border-color: #8cef12;
+    -webkit-box-shadow: 0 0 10px #8cef12;
+    -moz-box-shadow: 0 0 10px #8cef12;
+    box-shadow: 0 0 10px #8cef12;
+  }
+  40% {
+    border-color: #a86fb2;
+    -webkit-box-shadow: 0 0 10px #a86fb2;
+    -moz-box-shadow: 0 0 10px #a86fb2;
+    box-shadow: 0 0 10px #a86fb2;
+  }
+  60% {
+    border-color: #b1a832;
+    -webkit-box-shadow: 0 0 10px #b1a832;
+    -moz-box-shadow: 0 0 10px #b1a832;
+    box-shadow: 0 0 10px #b1a832;
+  }
+  80% {
+    border-color: #e612cf;
+    -webkit-box-shadow: 0 0 10px #e612cf;
+    -moz-box-shadow: 0 0 10px #e612cf;
+    box-shadow: 0 0 10px #e612cf;
+  }
+  100% {
+    border-color: #9831fc;
+    -webkit-box-shadow: 0 0 10px #9831fc;
+    -moz-box-shadow: 0 0 10px #9831fc;
+    box-shadow: 0 0 10px #9831fc;
+  }
+}
