@@ -1,5 +1,5 @@
 ## 💻 Template Preview
-- [3D Theme](https://michaelbarney.github.io/LinkFree/Templates/3D+Theme/)
+- [3D Theme](https://michaelbarney.github.io/LinkFree/Templates/3D%20Theme/)
 - [CasualBlue](https://michaelbarney.github.io/LinkFree/Templates/CasualBlue/)
 - [DarkMode](https://michaelbarney.github.io/LinkFree/Templates/DarkMode/)
 - [DeepSea](https://michaelbarney.github.io/LinkFree/Templates/DeepSea/)
@@ -12,7 +12,7 @@
 - [Nightmare](https://michaelbarney.github.io/LinkFree/Templates/Nightmare/)
 - [NyanCat](https://michaelbarney.github.io/LinkFree/Templates/NyanCat/)
 - [Outrun](https://michaelbarney.github.io/LinkFree/Templates/Outrun/)
-- [Pastel Dreams](https://michaelbarney.github.io/LinkFree/Templates/Pastel+Dreams/)
+- [Pastel Dreams](https://michaelbarney.github.io/LinkFree/Templates/Pastel%20Dreams/)
 - [PauloFilhoTheme](https://michaelbarney.github.io/LinkFree/Templates/PauloFilhoTheme/)
 - [Pink](https://michaelbarney.github.io/LinkFree/Templates/Pink/)
 - [Pride](https://michaelbarney.github.io/LinkFree/Templates/Pride/)
