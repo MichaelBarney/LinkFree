@@ -21,8 +21,10 @@ body {
 }
 
 #userPhoto:hover {
-	box-shadow: 0px 8px rgba(222, 218, 162, 1);
-	transform: translateY(-2px);
+	/*box-shadow: 0px 8px rgba(222, 218, 162, 1);*/
+	/*transform: translateY(-2px);*/
+	transform: scale(1.05);
+    	transition: all .3s ease-in-out;
 }
 
 #userPhoto:active {
