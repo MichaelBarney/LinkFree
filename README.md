@@ -49,16 +49,5 @@ A new template is a general LinkFree that has a distinctive structure or style w
 
 To submit one, you just have to make a pull request with your addition in the "Templates" directory.
 
-## Our Contributors
-| User | Instagram |
-|--|--|
-|[Michael Barney](https://github.com/MichaelBarney)| [@michaelbarneyjr](https://www.instagram.com/michaelbarneyjr/) |
-|[Izabella Melo](https://github.com/izmcm)|[@izabellacmelo](https://www.instagram.com/izabellacmelo/)|
-|[Thiago Augusto](https://github.com/thiagoaugustosm)|[@thiagoaugustosm](https://www.instagram.com/thiagoaugustosm/)|
-|[Yesi Aracawa](https://github.com/yesi-aracawa)|[@yesiservi](https://www.instagram.com/yesiservi/)|
-|[Guilherme Soares](https://github.com/guiscota)|[@guiscota](https://www.instagram.com/guiscota/)|
-|[Farell Faiz](https://github.io/farellfaiz)|[@farellfaiz](https://www.instagram.com/farellfaiz/)|
-
-
 
 
