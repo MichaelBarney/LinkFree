@@ -31,15 +31,12 @@ function moveItemDown(thisItem){
     var item = $( thisItem )[0].closest('.item');
     if(item == item.parentNode.lastElementChild){
         document.getElementById('items').insertBefore(item, document.getElementById('items').firstChild);
-        console.log("letztes");
     }
     else if(item == item.parentNode.lastElementChild.previousElementSibling){
         document.getElementById('items').appendChild(item);
-        console.log("vorletztes");
     }
     else{
         document.getElementById('items').insertBefore(item, item.nextElementSibling.nextElementSibling);
-        console.log("normal");
     }
 }
 

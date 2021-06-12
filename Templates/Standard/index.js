@@ -3,5 +3,5 @@ $( document ).ready(function() {
 });
 
 $( ".item" ).click(function() {
-   // Add here commands to run on link click
+    // Add here commands to run on link click
 });
