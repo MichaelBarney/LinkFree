@@ -30,13 +30,21 @@ body{
     text-decoration: none;
 }
 
-#links{
+#main{
     max-width: 675px;
+    min-width: 270px;
     width: auto;
     display: block;
     margin: 27px auto;
+    text-align: center;
 }
-.link{
+
+#buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
     display: block;
     background-color: var(--accentColor);
     color: var(--bgColor);
@@ -50,7 +58,119 @@ body{
     border: solid var(--accentColor) 2px;
 }
 
-.link:hover{
+.edit{
+    display: flex;
+    justify-content: space-between;
+}
+
+.parameter{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    margin: 0px 5px 0px 5px;
+    position: relative;
+}
+
+.edit_buttons{
+    width: 50px;
+}
+
+.label{
+    font-family: var(--font);
+    color: var(--bgColor);
+    position: absolute; 
+    top: 0%;  
+}
+
+.button{
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    width: 30%;
+    height: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--accentColor) 2px;
+}
+
+.delete{
     background-color: var(--bgColor);
     color: var(--accentColor);
+    border: solid var(--bgColor) 2px;
+    width: 100%;
+    min-width: 0;
+    padding: 0px;
+    margin: 0px;
+}
+
+.move{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+    border: solid var(--bgColor) 2px;
+    width: 100%;
+    min-width: 0;
+    padding: 0px;
+    margin: 0px;
+}
+
+.move:first-child{
+    margin-bottom: 10px;
+}
+
+.navigation{
+    min-width: 85px;
+}
+
+.input{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+    text-align: left;
+    width: 100%;
+    border: solid var(--bgColor) 2px;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute; 
+    top: 50%;  
+    transform: translate(0, -50%)  
+}
+
+.item:hover{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
+
+.edit:hover{
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+}
+
+.button:hover{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+}
+
+.move:hover{
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+}
+
+.input:focus{
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    cursor: text;
 }
