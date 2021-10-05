@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+
+img,
+video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 500px;
+	margin: 0 auto;
+	padding: 2em;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(./images/universe.gif);
+	background-repeat: repeat;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.instagram a {
+	color: aquamarine;
+}
