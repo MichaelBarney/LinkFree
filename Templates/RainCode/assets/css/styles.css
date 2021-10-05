@@ -1,0 +1,47 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url(../img/rain\ code.gif);
+  background-color: rgba(185, 174, 174, 0.1);
+  background-blend-mode: color;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  background-image: url(https://avatars.githubusercontent.com/u/84210050?v=4);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  margin: 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(15, 31, 20);
+  width: 15rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  font-family: sans-serif;
+}
+
+.link:hover {
+
+    cursor: pointer;
+    box-shadow: 0 0 15px white;
+    background-color: black;
+}
