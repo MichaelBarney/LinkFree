@@ -1,6 +1,6 @@
 # Standard Template
 
-[Website](https://michaelbarney.github.io/LinkFree/Templates/CasualBlue/)
+[Website](https://Snehpatel007.github.io/LinkFree/Templates/CasualBlue/)
 
 <img src="Templates/SimpleBlue/preview.png" alt="alt text" width="250px">
 
