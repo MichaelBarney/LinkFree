@@ -1,0 +1,105 @@
+/* Style Settings */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap');
+
+:root {
+    --font: 'Exo 2', sans-serif;
+}
+
+body {
+    background-color: rgb(243, 242, 242);
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+}
+
+#userPhoto {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+    box-shadow: 0 6px 10px #000;
+}
+
+#userName {
+    text-shadow: 0 1.5px 10px #000;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+#links {
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+
+.link {
+    color: #fff;
+    display: block;
+    background-color: rgba(66, 110, 255, 0.75);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
+    border: solid var(--accentColor) 2px;
+    border-radius: 10px;
+}
+
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(66, 110, 255);
+    border: solid rgb(66, 110, 255) 2px;
+    border-bottom: 5px solid rgb(66, 110, 255);
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.footer a {
+    text-decoration:none;
+    box-shadow: 0 4px 10px #000;
+}
+
+.circulo {
+    background: rgb(221, 221, 221);
+    border-radius: 10px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(32, 32, 32);
+}
+
+.circulo:hover {
+    background: rgb(66, 110, 255);
+    color: rgb(255, 255, 255);
+    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
+}
+
+@media only screen and (max-height: 675px) {
+    #userName{
+        color: #fff;
+        text-shadow: 0 1.5px 2px #000;
+    }
+}
+
+
