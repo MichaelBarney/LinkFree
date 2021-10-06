@@ -1,0 +1,112 @@
+body{
+  background-image: url('background.jpg');
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.wrapper {
+  font-family: monospace;
+  letter-spacing: 0.075em;
+  text-align: center;
+  font-size: 17px;
+}
+
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 20px auto -10px;
+}
+
+.image-cropper img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+h1,
+h2,
+h2 a {
+  color: rgb(20, 20, 20);
+  font-size: 1rem;
+  font-weight: 200;
+  border-color: transparent;
+  line-height: 1.25;
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+h1 {
+  color: #000;
+  font-size: 1.25rem;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+
+.wave {
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;        
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%;       
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(14.0deg) } 
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(14.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(10.0deg) }
+ 60% { transform: rotate( 0.0deg) } 
+100% { transform: rotate( 0.0deg) }
+}
+
+.links {
+  width: 100%;
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.links .link {
+  display: block;
+  width: 100%;
+  margin: 0 auto 10px;
+  color: rgb(253, 253, 253);
+  border: 2px solid rgb(53, 52, 52);
+  background-color: rgb(53, 52, 52);
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+.links .link:hover {
+  /*color: #043d2f;
+  background-color: transparent;*/
+  background-color: #c0c3d3;
+-webkit-box-shadow: 10px 10px 99px 6px rgb(250, 211, 250);
+-moz-box-shadow: 10px 10px 99px 6px rgb(250, 211, 250);
+box-shadow: 10px 10px 99px 6px rgb(250, 211, 250);
+
+
+}
+
+.fa:hover{
+    color:rgb(155, 152, 152);
+    background-color: transparent;
+}
