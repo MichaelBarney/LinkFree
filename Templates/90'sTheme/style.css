@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+	cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1100.ani),
+		url(https://ani.cursors-4u.net/cursors/cur-12/cur1100.png), auto !important;
+}
+
+img,
+video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 500px;
+	margin: 0 auto;
+	padding: 2em;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(./images/universe.gif);
+	background-repeat: repeat;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.instagram {
+	text-align: center;
+}
+
+.instagram a {
+	color: aquamarine;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.links button {
+	width: 20%;
+	margin: 2em;
+	padding: 1em;
+	color: rgb(195, 195, 195);
+	border-top: solid 6px rgb(252, 252, 252);
+	border-left: solid 6px rgb(252, 252, 252);
+	border-bottom: solid 6px rgb(136, 136, 136);
+	border-right: solid 6px rgb(136, 136, 136);
+}
+
+.links button:active {
+	transform: translateY(4px);
+}
+
+.links a {
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	text-decoration: none;
+	color: blueviolet;
+	font-size: large;
+}
