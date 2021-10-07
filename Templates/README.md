@@ -1,7 +1,7 @@
 ## 💻 Template Preview
 
 - [Art](https://codeswithroh.github.io/Demo/)
-- [Cherry-Blossm](https://sunilswain.github.io/Cherry-Bloosm/)
+- [Cherry-Bloosm](https://michaelbarney.github.io/LinkFree/Templates/Cherry-Bloosm/)
 - [Abstract](https://michaelbarney.github.io/LinkFree/Templates/Abstract/)
 - [3D Theme](https://michaelbarney.github.io/LinkFree/Templates/3D%20Theme/)
 - [CasualBlue](https://michaelbarney.github.io/LinkFree/Templates/CasualBlue/)
