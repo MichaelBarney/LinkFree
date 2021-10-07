@@ -1,0 +1,62 @@
+#wrapper {
+  width: 1600px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.Main__backgroundImg {
+  position: relative;
+}
+
+.Main__icon {
+  position: absolute;
+  top: 5%;
+  margin-left: 750px;
+  width: 200px;
+  height: 200px;
+}
+
+.Main__btnSocMeidia{
+    position: absolute;
+    font-size: 42px;
+    bottom: 0;
+    margin-left: 100px;
+   
+    
+}
+.Main__iconn {
+  width: 150px;
+  height: 150px;
+}
+
+.Main__atag {
+  position: absolute;
+  top: 25%;
+  margin-left: 100px;
+  width: 298px;
+  height: 50px;
+  text-transform: uppercase;
+
+  /* background-color: white; */
+  cursor: grab;
+
+  border-radius: 10%;
+  font-size: 38px;
+  text-align: center;
+}
+a {
+  /* text-decoration: none; */
+  color: #e06508;
+  font-weight: bold;
+  letter-spacing: 1;
+}
+
