@@ -9,6 +9,7 @@
 - [Cherry-Bloosm](https://michaelbarney.github.io/LinkFree/Templates/Cherry-Bloosm/)
 - [DarkMode](https://michaelbarney.github.io/LinkFree/Templates/DarkMode/)
 - [DeepSea](https://michaelbarney.github.io/LinkFree/Templates/DeepSea/)
+- [Dynamic](https://codeswithroh.github.io/Dynamic/)
 - [Eduardosgs](https://michaelbarney.github.io/LinkFree/Templates/Eduardosgs/)
 - [Galaxy](https://michaelbarney.github.io/LinkFree/Templates/Galaxy/)
 - [GoGreen](https://michaelbarney.github.io/LinkFree/Templates/GoGreen/)
