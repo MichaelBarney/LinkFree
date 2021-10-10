@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+:root {
+  --shadow: 2px 2px 10px #999999, -2px -2px 10px #ffffff;
+  --inner-shadow: inset 2px 2px 10px #999999, inset -2px -2px 10px #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Mulish", sans-serif;
+  font-size: 112.5%;
+  font-weight: 400;
+  margin: 0;
+  min-height: 100vh;
+  padding-block: clamp(2rem, 10vw, 4rem);
+}
+
+.container {
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 672px;
+  padding: clamp(1em, 5vw, 2em);
+  width: 90%;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+h1 {
+  font-size: clamp(1.9em, 7vw, 4em);
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.picture {
+  border-radius: 50%;
+  box-shadow: var(--inner-shadow);
+  height: 8em;
+  position: relative;
+  width: 8em;
+}
+
+.picture:hover, .picture:focus {
+  box-shadow: var(--shadow);
+  outline: none;
+}
+
+.picture::before {
+  content: "";
+  background: url("homer.jpg");
+  background-size: contain;
+  border-radius: 50%;
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  vertical-align: middle;
+}
+
+.link {
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  min-width: 20ch;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+.link:hover, .link:focus {
+  box-shadow: var(--inner-shadow);
+  outline: none;
+}
+
+.link i {
+  vertical-align: -13%;
+}
