@@ -26,6 +26,7 @@
 - [Pink](https://michaelbarney.github.io/LinkFree/Templates/Pink/)
 - [Pride](https://michaelbarney.github.io/LinkFree/Templates/Pride/)
 - [RainCode](https://michaelbarney.github.io/LinkFree/Templates/RainCode/)
+- [Shades Of Purple]()
 - [Sixties](https://michaelbarney.github.io/LinkFree/Templates/Sixties/)
 - [SmartGlow](https://michaelbarney.github.io/LinkFree/Templates/SmartGlow/)
 - [Standard](https://michaelbarney.github.io/LinkFree/Templates/Standard/)
