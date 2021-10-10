@@ -18,8 +18,22 @@ body {
   justify-content: center;
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
-  padding: 2em 4em;
+  padding: 1.5em 4em;
   border-radius: 20px;
+}
+
+.username {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px purple;
+  transition: all 0.5s;
+}
+
+.username:hover {
+  color: rgb(46, 3, 46);
+  text-shadow: 0px 0px 10px white;
 }
 
 .profile-pic {
