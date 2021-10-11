@@ -60,3 +60,23 @@ a {
   letter-spacing: 1;
 }
 
+button {
+  position: absolute;
+  top: 80%;
+  margin-left: 50px;
+  width: 200px;
+  height: 150px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: yellow;
+  background-color: tomato;
+  border: none;
+  font-weight: bold;
+
+  /* background-color: white; */
+  cursor: grab;
+
+  border-radius: 10%;
+  font-size: 38px;
+  text-align: center;
+}
