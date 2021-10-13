@@ -43,3 +43,11 @@ There are a three ways you can contribute. You can make changes to the core Link
 A new template is a general LinkFree that has a distinctive structure or style when compared to previous templates.
 
 To submit one, you just have to make a pull request with your addition in the "Templates" directory.
+
+## Some Existing Templates
+
+| Name           |  Desktop Screenshot                                                                                                                           |Mobile Screenshot                                                             | Contributed by                                     |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |------------------------------------------------------------------------------|-------------------------------------------------- |
+| Art Theme  | <img src="./assets/art-theme/art-theme-desktop.png" width="480" >    | <img src="./assets/art-theme/art-theme-mobile.png" height="200" width="100" >   |  [@RohitPurkait](https://github.com/codeswithroh) |
+| 3d Theme  | <img src="./assets/3d-theme/3d-theme-desktop.png " width="480" >   | <img src="./assets/3d-theme/3d-theme-mobile.png" height="200" width="100" >  | Farell Faiz|
+| Shades of Purple Theme  | <img src="./assets/shades-of-purple-theme/shades-of-purple-desktop.png " width="480" >   | <img src="./assets/shades-of-purple-theme/shades-of-purple-mobile.png" height="200" width="100" >   | [@RohitPurkait](https://github.com/codeswithroh)               
