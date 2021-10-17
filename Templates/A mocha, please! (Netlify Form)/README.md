@@ -2,7 +2,7 @@
 A simple template with everything you need. 
 Upload-ready Netlify form, animated buttons and easy to customizable CSS.
 
-![screenshot](screenshot.png "screenshot of template")
+<img src="screenshot.png" alt="screenshot of template" width="200">
 
 ## Netlify Form
 There is no extra configuration needed. If you upload it to Netlify as it is, it will work with build in spam protection. You can set up getting the messages via email, too. Check out the [documentation](https://docs.netlify.com/forms/setup/) for this, or watch [this tutorial](https://youtu.be/6ElQ689HRcY) if you prefer a video.
