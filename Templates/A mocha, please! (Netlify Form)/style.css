@@ -3,7 +3,10 @@
     --secondary: rgb(255, 235, 211);
     --background: rgb(255, 251, 241);
 
-    font-family: Poppins;
+    --font: "Poppins";
+
+
+    font-family: var(--font);
     font-size: 62.5%;
     color: var(--primary);
 }
@@ -150,7 +153,7 @@ textarea {
     background-color: var(--background);
     color: var(--primary);
 
-    font-family: Poppins;
+    font-family: var(--font);
     font-size: 1.4rem;
 
     height: 40px;
