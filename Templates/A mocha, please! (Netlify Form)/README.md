@@ -1,6 +1,6 @@
 # "A mocha, please!" ☕️
 A simple template with everything you need:  
-Upload-ready Netlify form, animated buttons and easy to customizable CSS.
+Upload-ready Netlify form, animated buttons and easy to customize CSS.
 
 <img src="screenshot.png" alt="screenshot of template" width="200">
 
