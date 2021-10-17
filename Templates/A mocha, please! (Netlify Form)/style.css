@@ -79,11 +79,20 @@ svg {
 .text {
     text-align: center;
 }
+
 .greeting {
     font-size: 1.7rem;
 
     opacity: 0.45;
     margin-top: 35px;
+}
+
+.greeting a {
+    text-decoration: underline;
+
+    border: none;
+    display: inline;
+    padding: 0;
 }
 
 .link-box {
@@ -113,7 +122,7 @@ a {
 }
 a:hover {
     background-color: var(--primary);
-    color: var(--secondary);
+    color: var(--background);
 
     transform: translate(9px, -9px);
 }
