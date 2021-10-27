@@ -1,45 +1,47 @@
 ## 💻 Template Preview
 
-- [3D Theme](https://michaelbarney.github.io/LinkFree/Templates/3D%20Theme/)
-- [90's Theme](https://michaelbarney.github.io/LinkFree/Templates/90'sTheme/)
-- [A mocha, please! (Netlify Form)](https://michaelbarney.github.io/LinkFree/Templates/A%20mocha,%20please!%20(Netlify%20Form)/)
-- [Abstract](https://michaelbarney.github.io/LinkFree/Templates/Abstract/)
-- [Arcade](https://michaelbarney.github.io/LinkFree/Templates/Arcade/)
-- [ArghMyEyes](https://michaelbarney.github.io/LinkFree/Templates/ArghMyEyes/)
-- [Art](https://codeswithroh.github.io/Demo/)
-- [CasualBlue](https://michaelbarney.github.io/LinkFree/Templates/CasualBlue/)
-- [Cherry-Bloosm](https://michaelbarney.github.io/LinkFree/Templates/Cherry-Bloosm/)
-- [Cubes](https://michaelbarney.github.io/LinkFree/Templates/Cubes/)
-- [DarkMode](https://michaelbarney.github.io/LinkFree/Templates/DarkMode/)
-- [DeepSea](https://michaelbarney.github.io/LinkFree/Templates/DeepSea/)
-- [Dynamic](https://codeswithroh.github.io/Dynamic/)
-- [Eduardosgs](https://michaelbarney.github.io/LinkFree/Templates/Eduardosgs/)
-- [Emo](https://michaelbarney.github.io/LinkFree/Templates/Emo/)
-- [FavouriteTeacherTheme](https://michaelbarney.github.io/LinkFree/Templates/FavouriteTeacherTheme/)
-- [Galaxy](https://michaelbarney.github.io/LinkFree/Templates/Galaxy/)
-- [GameOn](https://michaelbarney.github.io/LinkFree/Templates/GameOn/)
-- [GoGreen](https://michaelbarney.github.io/LinkFree/Templates/GoGreen/)
-- [Gridthetic](https://michaelbarney.github.io/LinkFree/Templates/Gridthetic/)
-- [Halloween](https://michaelbarney.github.io/LinkFree/Templates/Halloween/)
-- [Journal](https://michaelbarney.github.io/LinkFree/Templates/Journal/)
-- [Minimal Pastel](https://michaelbarney.github.io/LinkFree/Templates/Minimal%20Pastel/)
-- [Music](https://michaelbarney.github.io/LinkFree/Templates/Music)
-- [Neon](https://michaelbarney.github.io/LinkFree/Templates/Neon/)
-- [Nightmare](https://michaelbarney.github.io/LinkFree/Templates/Nightmare/)
-- [NyanCat](https://michaelbarney.github.io/LinkFree/Templates/NyanCat/)
-- [Outrun](https://michaelbarney.github.io/LinkFree/Templates/Outrun/)
-- [Pastel Dreams](https://michaelbarney.github.io/LinkFree/Templates/Pastel%20Dreams/)
-- [PauloFilhoTheme](https://michaelbarney.github.io/LinkFree/Templates/PauloFilhoTheme/)
-- [Pink](https://michaelbarney.github.io/LinkFree/Templates/Pink/)
-- [Pride](https://michaelbarney.github.io/LinkFree/Templates/Pride/)
-- [RainCode](https://michaelbarney.github.io/LinkFree/Templates/RainCode/)
-- [Shades Of Purple](https://codeswithroh.github.io/shades-of-purple/)
-- [Sixties](https://michaelbarney.github.io/LinkFree/Templates/Sixties/)
-- [SmartGlow](https://michaelbarney.github.io/LinkFree/Templates/SmartGlow/)
-- [SquidGame](https://michaelbarney.github.io/LinkFree/Templates/SquidGame/)
-- [Standard](https://michaelbarney.github.io/LinkFree/Templates/Standard/)
-- [SunMoon](https://michaelbarney.github.io/LinkFree/Templates/SunMoon/)
-- [Windows95](https://michaelbarney.github.io/LinkFree/Templates/Windows95/)
-- [blackCoffee](https://michaelbarney.github.io/LinkFree/Templates/blackCoffee/)
-- [draculaTheme](https://michaelbarney.github.io/LinkFree/Templates/draculaTheme/)
-- [mnmlsm](https://michaelbarney.github.io/LinkFree/Templates/mnmlsm/)
+|                                                               Name                                                               |                                                      Previews                                                      |
+| :------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
+|                            [3D Theme](https://michaelbarney.github.io/LinkFree/Templates/3D%20Theme/)                            |                              ![Preview](/Templates/3D%20Theme/preview.png "Preview")                               |
+|                           [90's Theme](https://michaelbarney.github.io/LinkFree/Templates/90'sTheme/)                            |                                                                                                                    |
+| [A mocha, please! (Netlify Form)](<https://michaelbarney.github.io/LinkFree/Templates/A%20mocha,%20please!%20(Netlify%20Form)/>) |                    ![Preview](</Templates/A%20mocha,%20please!%20(Netlify%20Form)/preview.png>)                    |
+|                             [Abstract](https://michaelbarney.github.io/LinkFree/Templates/Abstract/)                             |                               ![Preview](/Templates/Abstract/preview.png "Preview")                                |
+|                               [Arcade](https://michaelbarney.github.io/LinkFree/Templates/Arcade/)                               |                                                                                                                    |
+|                           [ArghMyEyes](https://michaelbarney.github.io/LinkFree/Templates/ArghMyEyes/)                           |                                                                                                                    |
+|                                           [Art](https://codeswithroh.github.io/Demo/)                                            |                                                                                                                    |
+|                           [CasualBlue](https://michaelbarney.github.io/LinkFree/Templates/CasualBlue/)                           |                              ![Preview](/Templates/CasualBlue/preview.png "Preview")                               |
+|                        [Cherry-Bloosm](https://michaelbarney.github.io/LinkFree/Templates/Cherry-Bloosm/)                        |                                                                                                                    |
+|                                [Cubes](https://michaelbarney.github.io/LinkFree/Templates/Cubes/)                                |                                                                                                                    |
+|                             [DarkMode](https://michaelbarney.github.io/LinkFree/Templates/DarkMode/)                             |                                                                                                                    |
+|                              [DeepSea](https://michaelbarney.github.io/LinkFree/Templates/DeepSea/)                              |                                                                                                                    |
+|                                        [Dynamic](https://codeswithroh.github.io/Dynamic/)                                        |                                                                                                                    |
+|                           [Eduardosgs](https://michaelbarney.github.io/LinkFree/Templates/Eduardosgs/)                           |                                                                                                                    |
+|                                  [Emo](https://michaelbarney.github.io/LinkFree/Templates/Emo/)                                  |                                                                                                                    |
+|                [FavouriteTeacherTheme](https://michaelbarney.github.io/LinkFree/Templates/FavouriteTeacherTheme/)                |                                                                                                                    |
+|                               [Galaxy](https://michaelbarney.github.io/LinkFree/Templates/Galaxy/)                               |                                                                                                                    |
+|                               [GameOn](https://michaelbarney.github.io/LinkFree/Templates/GameOn/)                               |                                ![Preview](/Templates/GameOn/preview.jpg "Preview")                                 |
+|                              [GoGreen](https://michaelbarney.github.io/LinkFree/Templates/GoGreen/)                              |                                                                                                                    |
+|                           [Gridthetic](https://michaelbarney.github.io/LinkFree/Templates/Gridthetic/)                           |                              ![Preview](/Templates/Gridthetic/preview.png "Preview")                               |
+|                            [Halloween](https://michaelbarney.github.io/LinkFree/Templates/Halloween/)                            |                                                                                                                    |
+|                              [Journal](https://michaelbarney.github.io/LinkFree/Templates/Journal/)                              |                                                                                                                    |
+|                      [Minimal Pastel](https://michaelbarney.github.io/LinkFree/Templates/Minimal%20Pastel/)                      |                           ![Preview](/Templates/Minimal%20Pastel/preview.gif "Preview")                            |
+|                                [Music](https://michaelbarney.github.io/LinkFree/Templates/Music)                                 |                                                                                                                    |
+|                                 [Neon](https://michaelbarney.github.io/LinkFree/Templates/Neon/)                                 |                                 ![Preview](/Templates/Neon/preview.png "Preview")                                  |
+|                            [Nightmare](https://michaelbarney.github.io/LinkFree/Templates/Nightmare/)                            |                                                                                                                    |
+|                              [NyanCat](https://michaelbarney.github.io/LinkFree/Templates/NyanCat/)                              |                                                                                                                    |
+|                               [Outrun](https://michaelbarney.github.io/LinkFree/Templates/Outrun/)                               |                                                                                                                    |
+|                       [Pastel Dreams](https://michaelbarney.github.io/LinkFree/Templates/Pastel%20Dreams/)                       |                                                                                                                    |
+|                      [PauloFilhoTheme](https://michaelbarney.github.io/LinkFree/Templates/PauloFilhoTheme/)                      |                                                                                                                    |
+|                                 [Pink](https://michaelbarney.github.io/LinkFree/Templates/Pink/)                                 |                                                                                                                    |
+|                                [Pride](https://michaelbarney.github.io/LinkFree/Templates/Pride/)                                |                                                                                                                    |
+|                             [RainCode](https://michaelbarney.github.io/LinkFree/Templates/RainCode/)                             |                                                                                                                    |
+|                               [Shades Of Purple](https://codeswithroh.github.io/shades-of-purple/)                               |                                                                                                                    |
+|                              [Sixties](https://michaelbarney.github.io/LinkFree/Templates/Sixties/)                              |                                                                                                                    |
+|                            [SmartGlow](https://michaelbarney.github.io/LinkFree/Templates/SmartGlow/)                            |                                                                                                                    |
+|                            [SquidGame](https://michaelbarney.github.io/LinkFree/Templates/SquidGame/)                            |                                                                                                                    |
+|                             [Standard](https://michaelbarney.github.io/LinkFree/Templates/Standard/)                             |                                                                                                                    |
+|                              [SunMoon](https://michaelbarney.github.io/LinkFree/Templates/SunMoon/)                              |                                                                                                                    |
+|                            [Windows95](https://michaelbarney.github.io/LinkFree/Templates/Windows95/)                            |                                                                                                                    |
+|                          [blackCoffee](https://michaelbarney.github.io/LinkFree/Templates/blackCoffee/)                          |                              ![Preview](/Templates/blackCoffee/preview.png "Preview")                              |
+|                         [draculaTheme](https://michaelbarney.github.io/LinkFree/Templates/draculaTheme/)                         |                                                                                                                    |
+|                               [mnmlsm](https://michaelbarney.github.io/LinkFree/Templates/mnmlsm/)                               | ![Preview](/Templates/mnmlsm/preview-dark.png "Preview") ![Preview](/Templates/mnmlsm/preview-light.png "Preview") |
