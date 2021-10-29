@@ -32,6 +32,7 @@
 - [PauloFilhoTheme](https://michaelbarney.github.io/LinkFree/Templates/PauloFilhoTheme/)
 - [Pink](https://michaelbarney.github.io/LinkFree/Templates/Pink/)
 - [Pride](https://michaelbarney.github.io/LinkFree/Templates/Pride/)
+- [RainbowBlast](https://michaelbarney.github.io/LinkFree/Templates/RainbowBlast/)
 - [RainCode](https://michaelbarney.github.io/LinkFree/Templates/RainCode/)
 - [Shades Of Purple](https://codeswithroh.github.io/shades-of-purple/)
 - [Sixties](https://michaelbarney.github.io/LinkFree/Templates/Sixties/)
@@ -43,3 +44,4 @@
 - [blackCoffee](https://michaelbarney.github.io/LinkFree/Templates/blackCoffee/)
 - [draculaTheme](https://michaelbarney.github.io/LinkFree/Templates/draculaTheme/)
 - [mnmlsm](https://michaelbarney.github.io/LinkFree/Templates/mnmlsm/)
+
