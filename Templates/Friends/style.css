@@ -48,7 +48,7 @@ body{
     width: 100%;
     max-width: 414px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 0;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   
