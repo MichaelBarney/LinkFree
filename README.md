@@ -27,7 +27,7 @@ You can fork this repository to your own account and there configure your person
 
 ## How to see statistics?
 
-You can use any statiscs platform of your choosing that is based on client javascript. We recommend the following:
+You can use any statistics platform of your choosing that is based on client javascript. We recommend the following:
 
 - [Amplitude](https://amplitude.com/homepage)
 - [Hotjar](https://www.hotjar.com/)
