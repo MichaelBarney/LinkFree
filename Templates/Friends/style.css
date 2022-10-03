@@ -1,0 +1,92 @@
+body{
+    background-color: #9973B2;
+    font-family: 'Vujahday Script', cursive;
+    margin-top:55px;
+  }
+  .wrapper {
+    letter-spacing: 0.075em;
+    text-align: center;
+    font-size: 17px;
+  }
+  .img-area{
+      position: relative;
+      width: 160px;
+      margin: 0 auto;
+  }
+  .frame{
+      height: 230px;
+  }
+  .rounded{
+    position: absolute;
+    left: 44px;
+    height: 122px;
+    top: 56px;
+    width: 91px;
+    border-radius: 9px;
+  }
+  h1,
+  h2,
+  h2 a {
+    color: rgb(20, 20, 20);
+    font-size: 2rem;
+    font-weight: 200;
+    border-color: transparent;
+    line-height: 1.25;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  
+  .links {
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+    padding: 0 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .links .link {
+    display: block;
+    width: 90%;
+    margin: 0 auto 10px;
+    color: rgb(253, 253, 253);
+    border: 2px solid rgb(53, 52, 52);
+    background-color: rgb(53, 52, 52);
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 0;
+  }
+  
+  .links .link:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+  }
+  div span::before {
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+  }
+  .r::before{
+      color:red;
+  }
+  .b::before{
+      color:blue;
+  }
+  .y::before{
+      color:yellow;
+  }
+.friends{
+  font-size: 177%;
+  position: absolute;
+  bottom:0;
+  right: 8px;
+  left: 8px;
+}
