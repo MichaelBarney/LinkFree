@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+::selection {
+  color: #ffce76;
+  background-color: #1d1919;
+}
+
+body {
+  background-color: #1d1919;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(29, 25, 25);
+  background: radial-gradient(
+    circle,
+    rgba(29, 25, 25, 0.8379726890756303) 0%,
+    rgba(29, 25, 25, 1) 50%,
+    rgba(25, 26, 29, 1) 100%
+  );
+}
+
+.art1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.art2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28em;
+}
+/* -----------------------------------------  */
+.profile_card_div {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 4em 1em; */
+}
+
+/* -----------------------------------------  */
+
+.whoami_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0em 1em;
+}
+.whoami_div .profilepic_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18em;
+}
+.whoami_div .profilepic_div .profilepic {
+  border: #ffcf765f 5px solid;
+  padding: 0.5em 0.5em;
+  border-radius: 100%;
+  border-top-left-radius: 0em;
+  border-top-right-radius: 0em;
+  padding-top: 0em;
+  width: 80%;
+  border-top: none;
+  transition: 0.5s ease;
+  filter: grayscale(50%);
+}
+.whoami_div .profilepic_div .profilepic:hover {
+  filter: grayscale(0%);
+  border: #ffce76 5px solid;
+  border-top: none;
+}
+
+.whoami_div .textinfo {
+  text-align: center;
+  color: #ffce76;
+  margin: 1em 0em;
+  margin-bottom: 2em;
+}
+.whoami_div .textinfo .name {
+  font-family: "Montserrat", sans-serif;
+  /* letter-spacing: 0.09em; */
+  word-spacing: 0.1em;
+  font-size: 2em;
+  transition: 0.5s ease;
+}
+.whoami_div .textinfo .name:hover {
+  letter-spacing: 0.09em;
+}
+.whoami_div .textinfo .profession {
+  letter-spacing: 0.09em;
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+.whoami_div .textinfo .profession:hover {
+  opacity: 1;
+}
+
+/* -----------------------------------------  */
+
+.linkscard_div {
+  /* width: 100%; */
+  flex: 1;
+  margin-bottom: 5em;
+  padding: 2em 4em;
+  border-radius: 2em;
+  border-left: #ffce76 2px solid;
+  border-right: #ffce76 2px solid;
+}
+
+.linkscard_div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.list-item {
+  /* padding: 1em 2em; */
+  margin: 0.5em;
+}
+.linkscard_div ul a {
+  background-color: #ffce76;
+  text-decoration: none;
+  width: 100%;
+  color: #1d1919;
+  padding: 1em 10em;
+  border-radius: 10em;
+  display: flex;
+  align-items: center;
+  border: #ffce76 2px solid;
+  font-weight: 900;
+  transition: 0.2s ease;
+}
+.linkscard_div ul a:hover,
+a:active {
+  border: #ffce76 2px solid;
+  background-color: #1d1919;
+  color: #ffce76;
+}
+
+.linkscard_div ul a img {
+  margin: 0em 0.2em;
+  border-radius: 100%;
+  width: 1.5em;
+}
+.linkscard_div ul a:hover img {
+  background-color: #ffce76;
+}
+
+@media (max-width: 315px) {
+  body {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 275px) {
+  .list-item {
+    margin: 0em;
+    width: 100%;
+  }
+  .linkscard_div ul a {
+    border: #1d1919 2px solid;
+    border-radius: 0em;
+  }
+}
