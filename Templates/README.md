@@ -37,7 +37,7 @@
 - [PauloFilhoTheme](https://michaelbarney.github.io/LinkFree/Templates/PauloFilhoTheme/)
 - [Pink](https://michaelbarney.github.io/LinkFree/Templates/Pink/)
 - [Pride](https://michaelbarney.github.io/LinkFree/Templates/Pride/)
-- - [Pride](https://michaelbarney.github.io/LinkFree/Templates/PurpleSideOfTheForce/)
+- - [PurpleSideOfTheForce](https://michaelbarney.github.io/LinkFree/Templates/PurpleSideOfTheForce/)
 - [RainCode](https://michaelbarney.github.io/LinkFree/Templates/RainCode/)
 - [RedZone](https://michaelbarney.github.io/LinkFree/Templates/RedZone/)
 - [Retro Game](https://michaelbarney.github.io/LinkFree/Templates/Retro%20Game/)
