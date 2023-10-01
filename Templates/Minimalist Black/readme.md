@@ -2,7 +2,7 @@
 
 Made by [Robert](https://github.com/half-real-SCRACX/)
 
-<img src="screenshot.png" alt="alt text" width="250px">
+<img src="screenshot.png" alt="alt text" width="auto">
 
 ## How to Use
 ### index.html
