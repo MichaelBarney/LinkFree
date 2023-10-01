@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+:root {
+    --bgColor: #e4e4e4;
+    --accentColor: #000000;
+    --font: 'Roboto Slab', serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+    height: 80vh;
+}
+
+a{
+    color: var(--accentColor);
+    text-decoration: none;
+}
+
+#userPhoto{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--accentColor);
+}
+
+#userName{
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-family: var(--font);
+    width: 100%;
+    margin: 15px;
+    text-align: center;
+    font-style: italic;
+}
+
+#links{
+    max-width: 675px;
+    width: 100%;
+}
+.link{
+    display: block;
+    background-color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 13px;
+    text-transform: lowercase;
+    font-size: 1rem;
+    border: solid var(--accentColor) 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.link:hover{
+    color: var(--bgColor);
+    background-color: var(--accentColor);
+    font-style: italic;
+}
+
+.footer{
+    position: fixed;
+    bottom: 10px;
+    font-size: 17px;
+}
