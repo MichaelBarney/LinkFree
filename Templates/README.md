@@ -50,6 +50,7 @@
 - [Space Theme](https://michaelbarney.github.io/LinkFree/Templates/Space%20Theme/)
 - [SquidGame](https://michaelbarney.github.io/LinkFree/Templates/SquidGame/)
 - [Standard](https://michaelbarney.github.io/LinkFree/Templates/Standard/)
+- [Standard Classic Theme](https://user-all-links.netlify.app/)
 - [SunMoon](https://michaelbarney.github.io/LinkFree/Templates/SunMoon/)
 - [Windows95](https://michaelbarney.github.io/LinkFree/Templates/Windows95/)
 - [blackCoffee](https://michaelbarney.github.io/LinkFree/Templates/blackCoffee/)
