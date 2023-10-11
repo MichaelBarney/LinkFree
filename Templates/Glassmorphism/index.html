@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <title>Glassmorphism</title>
+</head>
+
+<body>
+    <div class="background-animation">
+        <div class="shape"></div>
+    </div>
+    <div class="profile">
+        <div class="card" data-tilt data-tilt-scale="1.1">
+            <div class="profile-image">
+                <div class="avatar-image-">
+                    <img src="https://avatars.githubusercontent.com/u/65161219?v=4" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <p class="text-lg">hello everyone</p>
+                <p class="text-sm">iam <span class="profile-button" data-profile-url="https://github.com/sankalp475">@sankalp475</span></p>
+            </div>
+            <div class="social-links">
+                <button id="role-social-button" class="btn-github" data-social-links="https://github.com/sankalp475">
+                    <span><ion-icon name="logo-github"></ion-icon></span>
+                    <p>Collaborate with me on github</p>
+                </button>
+                <button id="role-social-button" class="btn-discord" data-social-links="https://discord.gg/BVB77Xrvux">
+                    <span><ion-icon name="logo-discord"></ion-icon></span>
+                    <p>find me on discord for chat</p>
+                </button>
+                <button id="role-social-button" class="btn-spotify" data-social-links="https://codepen.io/sankalpk261">
+                    <span><ion-icon name="logo-codepen"></ion-icon></span>
+                    <p>my code pen work</p>
+                </button>
+            </div>
+            <div class="mac-button">
+                <span data-close></span>
+                <span data-expand></span>
+                <span data-minimize></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
