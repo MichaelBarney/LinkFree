@@ -22,6 +22,7 @@
 - [Friends](https://michaelbarney.github.io/LinkFree/Templates/Friends/)
 - [Galaxy](https://michaelbarney.github.io/LinkFree/Templates/Galaxy/)
 - [GameOn](https://michaelbarney.github.io/LinkFree/Templates/GameOn/)
+- [Glassmorphism](https://michaelbarney.github.io/LinkFree/Templates/Glassmorphism/)
 - [GoGreen](https://michaelbarney.github.io/LinkFree/Templates/GoGreen/)
 - [Gridthetic](https://michaelbarney.github.io/LinkFree/Templates/Gridthetic/)
 - [Halloween](https://michaelbarney.github.io/LinkFree/Templates/Halloween/)
