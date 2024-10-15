@@ -1,0 +1,69 @@
+{
+    "settings": {
+        "favicon": "./assets/img/favicon.png",
+        "pageDescription": "Página de links de Guilherme Soares Cota, desenvolvedor experiente e consultor técnico.",
+        "pageKeywords": "Guilherme Soares Cota, Links, Desenvolvedor, Github, LinkedIn, Consultoria",
+        "bottons": {
+            "linksBorderRadius": "30px",
+            "socialMediaBorderRadius": "50%"
+        },
+        "colors": {
+            "background": "#f3f2f2",
+            "primary": "#4F5B93",
+            "secondary": "#333b47",
+            "linkText": "#fff",
+            "socialIconBackground": "#dddddd"
+        }
+    },
+    "user": {
+        "photo100px": "./assets/img/perfil.webp",
+        "name": "Guilherme Soares Cota",
+        "nameWritingAnimation": true,
+        "bio": "<Software Engineer 👩‍💻 Full Stack/>",
+        "username": "@guiscota"
+    },
+    "links": [
+        {
+            "text": "Website",
+            "url": "https://guiscota.dev",
+            "classIcon": "fa fa-globe"
+        },
+        {
+            "text": "GitHub",
+            "url": "https://github.com/guiscota",
+            "classIcon": "fa fa-github"
+        },
+        {
+            "text": "LinkedIn",
+            "url": "https://www.linkedin.com/in/guiscota",
+            "classIcon": "fa fa-linkedin-square"
+        }
+    ],
+    "socialMedias": [
+        {
+            "text": "Instagram",
+            "url": "https://www.instagram.com/guiscota",
+            "classIcon": "fa fa-instagram"
+        },
+        {
+            "text": "Facebook",
+            "url": "https://www.facebook.com/guiscota",
+            "classIcon": "fa fa-facebook-f"
+        },
+        {
+            "text": "WhatsApp",
+            "url": "https://api.whatsapp.com/send?text=Ol%C3%A1%20Guilherme!%20Eu%20vi%20o%20seu%20site,%20e%20gostaria%20de%20conversar.&phone=+5537999096306",
+            "classIcon": "fa fa-whatsapp"
+        },
+        {
+            "text": "E-mail",
+            "url": "mailto:contato@guiscota.dev?Subject=Ol%C3%A1%20Guilherme!%20Eu%20vi%20o%20seu%20site,%20e%20gostaria%20de%20conversar.",
+            "classIcon": "fa fa-envelope-o"
+        },
+        {
+            "text": "Project GitHub",
+            "url": "https://github.com/guiscota/links",
+            "classIcon": "fa fa-download"
+        }
+    ]
+}
