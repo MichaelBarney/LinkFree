@@ -8,6 +8,11 @@ Essa é uma página de links dinâmica e personalizável, construída com foco e
 
 Com uma interface responsiva e suporte a temas claro e escuro, a página se adapta ao estilo de cada usuário.
 
+<p align="center">
+  <img src="./assets/img/example-light-mode.png" alt="Light mode" width="45%" />
+  <img src="./assets/img/example-dark-mode.png" alt="Dark mode" width="45%" />
+</p>
+
 ---
 
 ## **Funcionalidades Principais**
