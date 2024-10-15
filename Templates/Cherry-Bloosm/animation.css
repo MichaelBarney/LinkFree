@@ -1,0 +1,348 @@
+:root {
+    --png:url('');
+    --gif:url("https://media1.giphy.com/media/XfxvBgWGIlk6STgMEn/source.gif");
+}
+.cat{
+    width:100px; /*width of your image*/
+    height:100px; /*height of your image*/
+    content:url('./cat.png');
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+
+}
+
+.rainbowcat-left{
+    position: absolute;
+    width:75px; /*width of your image*/
+    height:75px; /*height of your image*/
+    left: 70%;
+    content:var(--gif);
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+}
+
+.rainbowcat-left-bottom{
+    position: absolute;
+    width:75px; /*width of your image*/
+    height:75px; /*height of your image*/
+    left: 70%;
+    top:90%;
+    content:var(--gif);
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+}
+
+.rainbowcat-right{
+    position: absolute;
+    width:75px; 
+    height:75px; 
+    right: 70%;
+    content:var(--gif);
+    margin:0; 
+    padding:0;
+}
+
+.rainbowcat-right-bottom{
+    position: absolute;
+    width:75px; 
+    height:75px;
+    right: 70%;
+    top:90%;
+    content:var(--gif);
+    margin:0; 
+    padding:0;
+}
+
+.rainbowcat-top{
+    position: absolute;
+    width:75px; 
+    height:75px; 
+    top: 90%;
+    left:40%;
+    right:60%;
+    content:var(--gif);
+    margin:0; 
+    padding:0;
+}
+
+.rainbowcat-bottom{
+    position: absolute;
+    width:75px; 
+    height:75px; 
+    bottom: 90%;
+    left:30%;
+    right:70%;
+    content:var(--gif);
+    margin:0; 
+    padding:0;
+}
+
+.pulse{
+    animation-name            : pulse;
+    animation-duration        : 1s;
+    animation-iteration-count : 5;
+    animation-direction       : alternate;
+}
+
+.direction{
+    animation-name            : direction;
+    animation-duration        : 1s;
+    animation-iteration-count : 5;
+    animation-direction       : alternate;
+}
+
+.roll-in-left {
+	-webkit-animation: roll-in-left 2s ease-out 5 both;
+	        animation: roll-in-left 2s ease-out 5 both;
+}
+
+.roll-in-right {
+	-webkit-animation: roll-in-right 2s ease-out 5 both;
+	        animation: roll-in-right 2s ease-out 5 both;
+}
+
+.roll-in-top {
+	-webkit-animation: roll-in-top 2s ease-out 5 both;
+	        animation: roll-in-top 2s ease-out 5 both;
+}
+
+.roll-in-bottom {
+	-webkit-animation: roll-in-bottom 2s ease-out 5 both;
+	        animation: roll-in-bottom 2s ease-out 5 both;
+}
+
+@keyframes pulse {
+    from {
+        transform : scale(1);
+        opacity   : 1;
+    }
+    50% {
+        transform : scale(0.75);
+        opacity   : 0.25;
+    }
+    to {
+        transform : scale(1);
+        opacity   : 1;
+    }
+}
+
+@keyframes direction {
+    from { transform: scale(1)   ; opacity: 1;    }
+    to   { transform: scale(0.75); opacity: 0.25; }
+}
+  @-webkit-keyframes roll-in-top {
+    0% {
+      -webkit-transform: translateY(-600px) rotate(-540deg);
+              transform: translateY(-600px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-top {
+    0% {
+      -webkit-transform: translateY(-600px) rotate(-540deg);
+              transform: translateY(-600px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+ @-webkit-keyframes roll-in-bottom {
+    0% {
+      -webkit-transform: translateY(600px) rotate(540deg);
+              transform: translateY(600px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-bottom {
+    0% {
+      -webkit-transform: translateY(600px) rotate(540deg);
+              transform: translateY(600px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+@media only screen and (min-width:600px){
+  .rainbowcat-left{
+    position: absolute;
+    width:100px; /*width of your image*/
+    height:100px; /*height of your image*/
+    left: 90%;
+    content:var(--gif);
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+  }
+
+.rainbowcat-left-bottom{
+    position: absolute;
+    width:100px; /*width of your image*/
+    height:100px; /*height of your image*/
+    left: 90%;
+    top:90%;
+    content:var(--gif);
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+  }
+
+.rainbowcat-right{
+    position: absolute;
+    width:100px; 
+    height:100px; 
+    right: 90%;
+    content:var(--gif);
+    margin:0; 
+    padding:0;
+  }
+
+.rainbowcat-right-bottom{
+    position: absolute;
+    width:100px; 
+    height:100px;
+    right: 90%;
+    top:90%;
+    content:var(--gif);
+    margin:0; 
+    padding:0;
+  }
+
+.rainbowcat-top{
+    position: absolute;
+    width:100px; 
+    height:100px; 
+    top: 90%;
+    left:50%;
+    right:50%;
+    content:var(--gif);
+    margin:0; 
+    padding:0;
+  }
+
+.rainbowcat-bottom{
+    position: absolute;
+    width:100px; 
+    height:100px; 
+    bottom: 90%;
+    left:50%;
+    right:50%;
+    content:var(--gif);
+    margin:0; 
+    padding:0;
+  }
+  @-webkit-keyframes roll-in-right {
+      0% {
+        -webkit-transform: translateX(800px) rotate(540deg);
+                transform: translateX(800px) rotate(540deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
+        opacity: 1;
+      }
+    }
+    @keyframes roll-in-right {
+      0% {
+        -webkit-transform: translateX(800px) rotate(540deg);
+                transform: translateX(800px) rotate(540deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
+        opacity: 1;
+      }
+    }
+   
+  @-webkit-keyframes roll-in-top {
+      0% {
+        -webkit-transform: translateY(-800px) rotate(-540deg);
+                transform: translateY(-800px) rotate(-540deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateY(0) rotate(0deg);
+                transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+    }
+    @keyframes roll-in-top {
+      0% {
+        -webkit-transform: translateY(-800px) rotate(-540deg);
+                transform: translateY(-800px) rotate(-540deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateY(0) rotate(0deg);
+                transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+    }
+ 
+   @-webkit-keyframes roll-in-bottom {
+      0% {
+        -webkit-transform: translateY(600px) rotate(540deg);
+                transform: translateY(600px) rotate(540deg);
+        opacity: 0600px
+      }
+      100% {
+        -webkit-transform: translateY(0) rotate(0deg);
+                transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+    }
+    @keyframes roll-in-bottom {
+      0% {
+        -webkit-transform: translateY(600px) rotate(540deg);
+                transform: translateY(600px) rotate(540deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateY(0) rotate(0deg);
+                transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+    }
+  @-webkit-keyframes roll-in-left {
+      0% {
+        -webkit-transform: translateX(-800px) rotate(-540deg);
+                transform: translateX(-800px) rotate(-540deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
+        opacity: 1;
+      }
+    }
+    @keyframes roll-in-left {
+      0% {
+        -webkit-transform: translateX(-800px) rotate(-540deg);
+                transform: translateX(-800px) rotate(-540deg);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+                transform: translateX(0) rotate(0deg);
+        opacity: 1;
+      }
+    }
+}
+ 

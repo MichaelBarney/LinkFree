@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --font: 'Roboto Mono', monospace;
+    --background: white;
+    --color: #232333;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--color);
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+
+}
+
+.container {
+    flex: 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 1 auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+#userPhoto{
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+    border: solid var(--color) 2px;
+}
+
+#userName{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.25;
+    display: block;
+    color: var(--color);
+}
+
+#links{
+    max-width: 90%;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+
+.link{
+    display: block;
+    margin-bottom: 20px;
+    padding: 17px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: dashed var(--color) 2px;
+    text-align: center;
+    text-decoration: none;  
+    color: var(--color);  
+    word-wrap: break-word;
+
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+
+    :root {        
+        --background: #202124;
+        --color: white;
+    }
+  }
+  

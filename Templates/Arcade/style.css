@@ -1,0 +1,76 @@
+/* Style Settings */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #371853;
+    background-image: url('background.png');
+}
+
+a {cursor: crosshair;}
+
+#userPhoto{
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 35px auto 20px;
+}
+
+#userName{
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 1.25;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+#userName:hover{animation: blinker 1s infinite;}
+
+@keyframes blinker{
+    50%{
+        color: rgba(255,202,8,1);
+    }
+}
+
+#links{
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 36px auto 27px auto;
+}
+.link{
+    cursor: crosshair;
+    position: relative;
+    display: block;
+    background: #fe0df1;
+    background: linear-gradient(180deg, rgba(255,202,8,1) 0%, rgba(254,13,241,1) 100%);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.link:before,
+.link:after{
+    background-color: #fcdf08;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+.link:before{
+    top: -6px;
+    left: 0;
+    height: calc(100% + 12px);
+    width: 100%;
+}
+.link:after{
+    top: 0;
+    left: -6px;
+    height: 100%;
+    width: calc(100% + 12px);
+}
+
+.link:hover{font-size: 1.2rem;}
