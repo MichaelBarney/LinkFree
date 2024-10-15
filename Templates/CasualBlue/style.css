@@ -1,0 +1,78 @@
+/* Style Settings */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --bgColor: #eeeeee;
+    --accentColor: #204051;
+    --font: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+div.top{
+    background-color: #204051;
+    margin: 0;
+}
+
+#userPhoto{
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 35px auto;
+    border-radius: 25%;
+    border-style: solid;
+}
+
+#userName{
+    color: #bbb;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#links{
+    max-width: 675px;
+    width: 100%;
+    display: block;
+    margin: 27px auto;
+}
+
+h1{
+    text-align: center;
+    font-family: var(--font);
+    color: var(--accentColor);
+}
+
+#description{
+    text-align: center;
+    font-family: var(--font)
+}
+
+#social-media{
+    margin: auto;
+}
+
+.link{
+    display: block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border-radius: 25px;
+}
+
+.link:hover{
+    background-color: #3b6978;
+    color: #ffffff;
+}

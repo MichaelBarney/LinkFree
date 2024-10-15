@@ -1,0 +1,60 @@
+/* Style Settings */
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+:root {
+    --bgColor: rgb(38, 35, 53);
+    --accentColor: rgb(249, 42, 173);
+    --font: 'Teko', sans-serif;
+    --shaddow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+#userPhoto{
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+    border: 2px solid var(--accentColor);
+}
+
+#userName{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff5f6;
+    text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75;
+  }
+
+#links{
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+.link{
+    display: block;
+    background: linear-gradient(to bottom, #fff951 25%, #fc28a8);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: 2px solid var(--accentColor);
+    border-radius: 50px;
+}
+
+.link:hover{
+    background: var(--bgColor);
+    color: var(--accentColor);
+}

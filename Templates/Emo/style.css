@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html, body {
+    font-family: Quicksand;
+    margin: 0;
+    background: rgb(96,96,96);
+    background: linear-gradient(90deg, rgba(96,96,96,1) 0%, rgba(0,0,0,1) 50%, rgba(96,96,96,1) 100%);
+}
+
+main {
+    margin: 0;
+}
+
+.img-container {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.img {
+    object-fit: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.some-link {
+    padding: 0.2rem;
+    width: 25px;
+    height: 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 1px 1px rgb(172, 172, 172);
+    border-radius: 2px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.some-link:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px magenta;
+}
+
+.some-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.external-link {
+    display: block;
+    text-align: center;
+    box-shadow: 2px 2px rgb(172, 172, 172);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    flex-basis: 100%;
+    font-size: 1rem;
+}
+
+.external-link:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 2px magenta;
+}
+
+.external-link__header {
+    margin: 0.2rem 0;
+    color: rgb(27, 27, 27);
+    font-size: 0.8rem;
+
+}
+
+.username {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 10px;
+    display: block;
+    text-decoration: none;
+}
+.username:hover {
+    color: magenta;
+}
+
+@media screen and (min-width: 600px) {
+    /* TABLET */
+    .main {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .some-icons-container {
+        justify-content: center;
+    }
+    .some-link {
+        margin: 0.4rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    /* LAPTOP */
+    .main {
+        width: 40%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}

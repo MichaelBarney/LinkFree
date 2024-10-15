@@ -1,0 +1,75 @@
+/* Style Settings */
+@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
+:root {
+    --bgColor: white;
+    --accentColor: #363534;
+    --font: 'Modak', cursive;
+}
+
+body {
+  background-image: url('https://mk-website-media.s3.amazonaws.com/wp-content/uploads/2018/10/19001752/Wallpaper-IngridMika-ContactGrid55-1-1100x1318.jpg');
+  background-size: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: 70%;
+    }
+}
+
+#userPhoto {
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 35px auto 20px;
+    border: 5px solid black;
+}
+
+.circle {
+    border-radius: 100px;
+}
+
+.roundsquare {
+    border-radius: 15px;
+}
+
+#userName {
+    color: #2577C1;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 3px 3px 0 var(--accentColor), 1px 1px 0 var(--accentColor), 2px 2px 0 var(--accentColor);
+}
+
+#links {
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+.link {
+    display: block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+	margin-left:3%;
+	margin-right:3%;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--accentColor) 2px;
+    border-radius: 15px;
+}
+
+.link:hover {
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
