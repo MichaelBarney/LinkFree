@@ -1,45 +1,15 @@
-# LinkFree
+# Ancient India (ANCIND) Theme
 
-A free and open source alternative to LinkTree!
+This is a very cool template which looks professional in design, color and typography. It has colors similar to the ancient artifacts which makes you feel a mixture of modern and ancient world.
 
-[Website](https://michaelbarney.github.io/LinkFree)
+[Visit the template demo site](https://michaelbarney.github.io/LinkFree/Templates/Ancind%Theme)
 
-<img src="https://i.imgur.com/B4LX0kY.png" alt="alt text" width="250px">
 
-## What is LinkFree?
+### Preview
 
-Ever wanted to add more links to your Instagram bio? LinkFree does just that! It gathers all of your links into one page that is easy to navigate.
+![Preview of the Website](media/Preview.png)
 
-## What are the benefits?
-
-Compared to other solutions, LinkFree is fully customizable and open source!
-
-- No more pesky third party logos
-- Add your custom colors, images and fonts
-- Use full custom analytics and metrics platforms
-- Create your own template or use one made by the community!
-
-## How to use?
-
-To start off, you can choose a template for your LinkFree in the "Templates" directory. Then you can clone or fork this repository to adapt it with your information.
-
-You can fork this repository to your own account and from there, configure your personal page using GitHub Pages. This will let you make edits much faster.
-
-## How to see statistics?
-
-You can use any statistics platform of your choosing that is based on client JavaScript. We recommend the following:
-
-- [Amplitude](https://amplitude.com/homepage)
-- [Hotjar](https://www.hotjar.com/)
-
-You can use any of the functions for load and click defined by the LinkFree template's JavaScript file, or you can add code snippets to the Head or Body of the HTML file.
-
-## How to contribute?
-
-There are three ways you can contribute. You can make changes to the core LinkFree project, create new LinkFree templates or just share your LinkFree.
-
-### Creating Templates
-
-A new template is a general LinkFree that has a distinctive structure or style when compared to previous templates.
-
-To submit one, you just have to make a pull request with your addition in the "Templates" directory.
+## Features
+- The website looks elegant while being very clean and simple.
+- There are special hover effects for the elements.
+- There is smooth Transition touch for ease of use.
