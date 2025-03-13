@@ -63,20 +63,16 @@ body {
 }
 .whoami_div .profilepic_div .profilepic {
   border: #ffcf765f 5px solid;
-  padding: 0.5em 0.5em;
-  border-radius: 100%;
-  border-top-left-radius: 0em;
-  border-top-right-radius: 0em;
-  padding-top: 0em;
+  padding: 0.5em;
+  border-radius: 50%;
   width: 80%;
-  border-top: none;
   transition: 0.5s ease;
-  filter: grayscale(50%);
+  /* filter: grayscale(50%); */
 }
 .whoami_div .profilepic_div .profilepic:hover {
-  filter: grayscale(0%);
+  /* filter: grayscale(0%); */
   border: #ffce76 5px solid;
-  border-top: none;
+  /* border-top: none; */
 }
 
 .whoami_div .textinfo {
