@@ -200,7 +200,7 @@ a:active {
 
 @media screen and (orientation: portrait) {
   .profile_card_div {
-    margin: 2em 1em; /* Più spazio in verticale */
+    margin: 1em 1em; /* Più spazio in verticale */
   }
   
   .linkscard_div ul {
