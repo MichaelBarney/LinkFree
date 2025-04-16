@@ -187,11 +187,14 @@ a:active {
 
   /* Adatta i pulsanti/link per schermi piccoli */
   .linkscard_div ul a {
-	width: 100%;
-    max-width: 600px;  /* Evita che diventino troppo larghi su dispositivi con schermi grandi */  
-    padding: 1em 1em;
-    font-size: 0.9em;
-    flex-direction: row; /* Assicurati che l'immagine e il testo restino in riga */
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  width: 100%;
+	  max-width: 600px;  /* Evita che diventino troppo larghi su dispositivi con schermi grandi */  
+	  padding: 1em 1em;
+	  font-size: 0.9em;
+	  flex-direction: row; /* Assicurati che l'immagine e il testo restino in riga */
   }
 }
 
