@@ -209,6 +209,10 @@ a:active {
   }
   
   .linkscard_div ul a {
+	  display: flex;             /* Assicura il layout flessibile */
+      justify-content: center;   /* Centra il contenuto orizzontalmente */
+      align-items: center;       /* Centra il contenuto verticalmente */
+      flex-direction: row;       /* Mantiene icona e testo in riga */
 	  width: 80vw;       /* Usa l'80% della larghezza del viewport */
 	  max-width: 400px;  /* Imposta una larghezza massima per evitare che diventino troppo larghi */
 	  padding: 1em 2em; /* Riduci il padding per adattarsi allo schermo più stretto */
