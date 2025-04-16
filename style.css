@@ -180,10 +180,16 @@ a:active {
   .whoami_div .profilepic_div .profilepic {
     width: 60%;
   }
+  
+  .linkscard_div {
+    padding: 2em 0.5em; /* meno spazio ai lati della card */
+  }
 
   /* Adatta i pulsanti/link per schermi piccoli */
   .linkscard_div ul a {
-    padding: 1em 2em;
+	width: 100%;
+    max-width: 600px;  /* Evita che diventino troppo larghi su dispositivi con schermi grandi */  
+    padding: 1em 1em;
     font-size: 0.9em;
     flex-direction: row; /* Assicurati che l'immagine e il testo restino in riga */
   }
