@@ -88,17 +88,29 @@ body {
   font-size: 2em;
   transition: 0.5s ease;
 }
-.whoami_div .textinfo .name:hover {
+/* Effetto di espansione del testo 'Beerpong Frampula' quando passi sopra con il 
+mouse 
+
+ .whoami_div .textinfo .name:hover {
   letter-spacing: 0.09em;
-}
+} 
+
+*/
 .whoami_div .textinfo .profession {
   letter-spacing: 0.09em;
   font-size: 0.8em;
   opacity: 0.5;
 }
+
+/* Effetto di opacità nella scritta secondaria sotto 'Beerpong Frampula' quando passi
+sopra con il mouse
+
 .whoami_div .textinfo .profession:hover {
   opacity: 1;
 }
+
+*/
+
 
 /* -----------------------------------------  */
 
