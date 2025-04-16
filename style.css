@@ -167,3 +167,23 @@ a:active {
     border-radius: 0em;
   }
 }
+
+@media (max-width: 768px) {
+  /* Riduci i margini generali e l'altezza della card */
+  .profile_card_div {
+    margin: 1em;
+    flex: 1;
+  }
+  
+  /* Riduci la dimensione dell'immagine */
+  .whoami_div .profilepic_div .profilepic {
+    width: 60%;
+  }
+
+  /* Adatta i pulsanti/link per schermi piccoli */
+  .linkscard_div ul a {
+    padding: 1em 2em;
+    font-size: 0.9em;
+    flex-direction: row; /* Assicurati che l'immagine e il testo restino in riga */
+  }
+}
