@@ -168,6 +168,7 @@ a:active {
   }
 }
 
+
 @media (max-width: 768px) {
   /* Riduci i margini generali e l'altezza della card */
   .profile_card_div {
@@ -195,10 +196,13 @@ a:active {
   
   .linkscard_div ul {
     flex-direction: column; /* Assicurati che gli elementi siano disposti in colonna */
+	align-items: center; /* Assicura che i link siano centrati */
   }
   
   .linkscard_div ul a {
-    padding: 1em 1em; /* Riduci il padding per adattarsi allo schermo più stretto */
-    font-size: 1em;   /* Regola la dimensione del testo se necessario */
+	  width: 80vw;       /* Usa l'80% della larghezza del viewport */
+	  max-width: 400px;  /* Imposta una larghezza massima per evitare che diventino troppo larghi */
+	  padding: 1em 2em; /* Riduci il padding per adattarsi allo schermo più stretto */
+	  font-size: 1em;   /* Regola la dimensione del testo se necessario */
   }
 }
