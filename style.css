@@ -187,3 +187,18 @@ a:active {
     flex-direction: row; /* Assicurati che l'immagine e il testo restino in riga */
   }
 }
+
+@media screen and (orientation: portrait) {
+  .profile_card_div {
+    margin: 2em 1em; /* Più spazio in verticale */
+  }
+  
+  .linkscard_div ul {
+    flex-direction: column; /* Assicurati che gli elementi siano disposti in colonna */
+  }
+  
+  .linkscard_div ul a {
+    padding: 1em 1em; /* Riduci il padding per adattarsi allo schermo più stretto */
+    font-size: 1em;   /* Regola la dimensione del testo se necessario */
+  }
+}
