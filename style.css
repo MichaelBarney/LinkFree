@@ -122,8 +122,8 @@ sopra con il mouse
   border-radius: 2em;
   border-left: #ffce76 2px solid;
   border-right: #ffce76 2px solid;
-  border-top: #ffce76 2px solid;
-  border-bottom: #ffce76 2px solid;
+  /*border-top: #ffce76 2px solid;
+  border-bottom: #ffce76 2px solid; */
 }
 
 .linkscard_div ul {
