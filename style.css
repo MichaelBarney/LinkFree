@@ -144,9 +144,11 @@ sopra con il mouse
   border-radius: 10em;
   display: flex;
   align-items: center;
+  justify-content: center; /* Centra il contenuto orizzontalmente */
   border: #ffce76 2px solid;
   font-weight: 900;
   transition: 0.2s ease;
+  width: 300px; /* Imposta una larghezza fissa */
 }
 .linkscard_div ul a:hover,
 a:active {
