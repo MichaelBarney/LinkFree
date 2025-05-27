@@ -235,23 +235,5 @@ a:active {
 	  font-size: 1em;   /* Regola la dimensione del testo se necessario */
   }
 
-  .site-footer {
-    margin-top: 4em;
-    padding: 1em 0;
-    text-align: center;
-    font-size: 0.9em;
-    color: #ffffff;              /* colore testo */
-    background-color: transparent; /* o un semitrasparente, es: rgba(0,0,0,0.5) */
-  }
 
-  .site-footer a {
-    color: #ffce76;               /* il giallo dei tuoi bottoni */
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.2s ease;
-  }
-
-  .site-footer a:hover {
-    color: #ffffff;              /* cambia colore al passaggio */
-  }
 }
