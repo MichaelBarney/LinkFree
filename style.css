@@ -235,5 +235,28 @@ a:active {
 	  font-size: 1em;   /* Regola la dimensione del testo se necessario */
   }
 
+  /* container della voce Privacy */
+  .privacy_div {
+    margin-top: 3em;      /* spazio tra card e Privacy */
+    text-align: center;   /* centra orizzontalmente */
+  }
+
+  /* link Privacy in stile scuro/giallo */
+  .privacy_div a {
+    color: #ffce76;            /* stesso giallo dei bottoni */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: color 0.2s ease;
+  }
+
+  /* hover: inverte i colori */
+  .privacy_div a:hover {
+    color: #1d1919;
+    background: #ffce76;
+    padding: 0.2em 0.6em;
+    border-radius: 0.5em;
+  }
+
 
 }
