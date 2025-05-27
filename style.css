@@ -237,7 +237,7 @@ a:active {
 
   /* container della voce Privacy */
   .privacy_div {
-    margin-top: 3em;      /* spazio tra card e Privacy */
+    margin-top: 1em;      /* spazio tra card e Privacy */
     text-align: center;   /* centra orizzontalmente */
   }
 
