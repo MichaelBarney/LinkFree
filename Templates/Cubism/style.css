@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e74c3c;
+    --accent-color: #f39c12;
+    --accent-blue: #3498db;
+    --accent-green: #2ecc71;
+    --background: #ecf0f1;
+    --text-dark: #2c3e50;
+    --text-light: #ecf0f1;
+    --link-bg-start: #ffffff;
+    --link-bg-end: #f8f9fa;
+    --linkedin-color: #0077b5;
+    --instagram-color: #e4405f;
+    --youtube-color: #ff0000;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, var(--background) 0%, #bdc3c7 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Geometric Background Shapes - Cubism Style */
+.geometric-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    opacity: 0.15;
+    transform-origin: center;
+    animation: float 20s infinite ease-in-out;
+}
+
+.shape1 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.shape2 {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(120deg, var(--accent-blue), var(--accent-green));
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    top: 60%;
+    right: 10%;
+    animation-delay: -5s;
+}
+
+.shape3 {
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(225deg, var(--primary-color), var(--accent-blue));
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    bottom: 15%;
+    left: 15%;
+    animation-delay: -10s;
+}
+
+.shape4 {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(90deg, var(--accent-green), var(--accent-color));
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    top: 30%;
+    right: 25%;
+    animation-delay: -15s;
+}
+
+.shape5 {
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(180deg, var(--secondary-color), var(--primary-color));
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    top: 50%;
+    left: 30%;
+    animation-delay: -7s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(30px, -30px) rotate(90deg);
+    }
+    50% {
+        transform: translate(-20px, 20px) rotate(180deg);
+    }
+    75% {
+        transform: translate(40px, 30px) rotate(270deg);
+    }
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.profile-frame {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    position: relative;
+    transform: rotate(45deg);
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    padding: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(-45deg);
+    clip-path: polygon(15% 15%, 85% 15%, 85% 85%, 15% 85%);
+}
+
+.profile-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+.profile-bio {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* Links Section */
+.links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.link-item {
+    text-decoration: none;
+    background: white;
+    border-radius: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 0 var(--primary-color);
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0 100%);
+}
+
+.link-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.3), 
+        transparent);
+    transition: left 0.5s ease;
+}
+
+.link-item:hover::before {
+    left: 100%;
+}
+
+.link-item:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--secondary-color);
+}
+
+.link-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    background: linear-gradient(135deg, var(--link-bg-start) 0%, var(--link-bg-end) 100%);
+}
+
+.link-content i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--secondary-color);
+    transition: transform 0.3s ease;
+}
+
+.link-item:hover .link-content i {
+    transform: rotate(360deg) scale(1.2);
+}
+
+.link-item:nth-child(1) .link-content i {
+    color: var(--primary-color);
+}
+
+.link-item:nth-child(2) .link-content i {
+    color: var(--accent-blue);
+}
+
+.link-item:nth-child(3) .link-content i {
+    color: var(--linkedin-color);
+}
+
+.link-item:nth-child(4) .link-content i {
+    color: var(--instagram-color);
+}
+
+.link-item:nth-child(5) .link-content i {
+    color: var(--youtube-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 15px;
+    }
+
+    .profile-name {
+        font-size: 2rem;
+    }
+
+    .profile-frame {
+        width: 120px;
+        height: 120px;
+    }
+
+    .link-content {
+        padding: 18px 25px;
+        font-size: 1rem;
+    }
+
+    .shape {
+        opacity: 0.1;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-name {
+        font-size: 1.8rem;
+    }
+
+    .link-content {
+        padding: 15px 20px;
+        font-size: 0.95rem;
+    }
+
+    .link-content i {
+        font-size: 1.3rem;
+        margin-right: 12px;
+    }
+}
