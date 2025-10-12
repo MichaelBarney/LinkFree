@@ -36,6 +36,8 @@ To customize this theme for your needs:
    - Modify CSS variables in the `:root` selector to change the color scheme
    - Adjust `--accent-gradient` for different brand colors
 
+**Note**: The theme supports up to 10 links with staggered animations. If you need more links, you can add additional animation delays in the CSS or remove the animation delays for a simpler effect.
+
 ## Typography
 
 This theme uses the Inter font family, which is also used by Vercel. It provides excellent readability and a modern appearance.

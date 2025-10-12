@@ -99,6 +99,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
 }
 
 .bio {
@@ -134,6 +135,11 @@ body {
 .link-card:nth-child(3) { animation-delay: 0.2s; }
 .link-card:nth-child(4) { animation-delay: 0.25s; }
 .link-card:nth-child(5) { animation-delay: 0.3s; }
+.link-card:nth-child(6) { animation-delay: 0.35s; }
+.link-card:nth-child(7) { animation-delay: 0.4s; }
+.link-card:nth-child(8) { animation-delay: 0.45s; }
+.link-card:nth-child(9) { animation-delay: 0.5s; }
+.link-card:nth-child(10) { animation-delay: 0.55s; }
 
 .link-card::before {
     content: '';
