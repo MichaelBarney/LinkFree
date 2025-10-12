@@ -26,6 +26,7 @@
 - [Gridthetic](https://michaelbarney.github.io/LinkFree/Templates/Gridthetic/)
 - [Halloween](https://michaelbarney.github.io/LinkFree/Templates/Halloween/)
 - [Journal](https://michaelbarney.github.io/LinkFree/Templates/Journal/)
+- [Liquid](https://michaelbarney.github.io/LinkFree/Templates/Liquid/)
 - [Minimal Pastel](https://michaelbarney.github.io/LinkFree/Templates/Minimal%20Pastel/)
 - [MagicalMysteryTheme](https://michaelbarney.github.io/LinkFree/Templates/MagicalMysteryTheme/)
 - [Music](https://michaelbarney.github.io/LinkFree/Templates/Music)
