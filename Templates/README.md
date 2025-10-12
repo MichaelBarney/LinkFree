@@ -52,6 +52,7 @@
 - [Standard](https://michaelbarney.github.io/LinkFree/Templates/Standard/)
 - [Standard Classic Theme](https://user-all-links.netlify.app/)
 - [SunMoon](https://michaelbarney.github.io/LinkFree/Templates/SunMoon/)
+- [Vercel Theme](https://michaelbarney.github.io/LinkFree/Templates/Vercel%20Theme/)
 - [Windows95](https://michaelbarney.github.io/LinkFree/Templates/Windows95/)
 - [blackCoffee](https://michaelbarney.github.io/LinkFree/Templates/blackCoffee/)
 - [draculaTheme](https://michaelbarney.github.io/LinkFree/Templates/draculaTheme/)
