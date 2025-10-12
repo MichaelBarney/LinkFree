@@ -12,6 +12,7 @@
 - [Buisness Theme](https://michaelbarney.github.io/LinkFree/Templates/Buisness%20Theme/)
 - [CasualBlue](https://michaelbarney.github.io/LinkFree/Templates/CasualBlue/)
 - [Cherry-Bloosm](https://michaelbarney.github.io/LinkFree/Templates/Cherry-Bloosm/)
+- [Cubism](https://michaelbarney.github.io/LinkFree/Templates/Cubism/)
 - [Cubes](https://michaelbarney.github.io/LinkFree/Templates/Cubes/)
 - [DarkMode](https://michaelbarney.github.io/LinkFree/Templates/DarkMode/)
 - [DeepSea](https://michaelbarney.github.io/LinkFree/Templates/DeepSea/)
