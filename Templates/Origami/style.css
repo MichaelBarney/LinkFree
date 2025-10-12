@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font: 'Quicksand', sans-serif;
+    --paper-white: #fafafa;
+    --paper-cream: #f5f1e8;
+    --fold-shadow: #d4cfc4;
+    --accent-coral: #ff6b6b;
+    --accent-teal: #4ecdc4;
+    --text-dark: #2d3436;
+    --text-light: #636e72;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    color: var(--text-dark);
+    font-family: var(--font);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Decorative origami bird in corner */
+.origami-bird {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    background: var(--accent-teal);
+    clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%);
+    opacity: 0.3;
+    transform: rotate(45deg);
+    animation: float 6s ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: rotate(45deg) translateY(0px);
+    }
+    50% {
+        transform: rotate(45deg) translateY(-20px);
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    width: 100%;
+    background: var(--paper-cream);
+    padding: 50px 40px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 
+        0 10px 40px rgba(0, 0, 0, 0.1),
+        inset -5px -5px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Paper fold effect on top corner */
+.content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 60px 60px 0;
+    border-color: transparent var(--fold-shadow) transparent transparent;
+    filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.1));
+}
+
+.content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 60px 60px 0;
+    border-color: transparent var(--paper-white) transparent transparent;
+}
+
+.photo-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30px;
+}
+
+#userPhoto {
+    width: 120px;
+    height: 120px;
+    display: block;
+    border-radius: 50%;
+    border: 4px solid var(--paper-white);
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.15),
+        0 0 0 8px var(--paper-cream),
+        0 0 0 12px var(--accent-coral);
+    position: relative;
+    z-index: 2;
+}
+
+#userName {
+    width: 100%;
+    color: var(--text-dark);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.25;
+    display: block;
+    margin-bottom: 40px;
+    transition: color 0.3s ease;
+}
+
+#userName:hover {
+    color: var(--accent-coral);
+}
+
+#links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.link {
+    display: block;
+    padding: 18px 30px;
+    background: var(--paper-white);
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+        4px 4px 8px rgba(0, 0, 0, 0.1),
+        -2px -2px 6px rgba(255, 255, 255, 0.8);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+/* Paper fold corner effect on links */
+.link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 25px 0;
+    border-color: transparent var(--fold-shadow) transparent transparent;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+.link:hover {
+    transform: translateY(-5px) rotateX(5deg);
+    box-shadow: 
+        8px 8px 20px rgba(0, 0, 0, 0.15),
+        -4px -4px 12px rgba(255, 255, 255, 0.9);
+    background: linear-gradient(135deg, var(--paper-white) 0%, var(--paper-cream) 100%);
+}
+
+.link:hover::before {
+    border-width: 0 35px 35px 0;
+    border-color: transparent var(--accent-teal) transparent transparent;
+    opacity: 0.8;
+}
+
+.link:active {
+    transform: translateY(-2px) rotateX(2deg);
+    box-shadow: 
+        4px 4px 12px rgba(0, 0, 0, 0.12),
+        -2px -2px 8px rgba(255, 255, 255, 0.9);
+}
+
+.link-text {
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .content {
+        padding: 40px 30px;
+    }
+
+    .origami-bird {
+        width: 60px;
+        height: 60px;
+        top: 20px;
+        right: 20px;
+    }
+
+    #userPhoto {
+        width: 100px;
+        height: 100px;
+    }
+
+    .photo-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+
+    #userName {
+        font-size: 1.5rem;
+    }
+
+    .link {
+        padding: 16px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .content {
+        padding: 30px 20px;
+    }
+
+    #userName {
+        font-size: 1.3rem;
+    }
+
+    .link {
+        padding: 14px 20px;
+        font-size: 0.95rem;
+    }
+}
