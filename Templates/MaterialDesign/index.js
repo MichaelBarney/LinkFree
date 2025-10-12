@@ -25,11 +25,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Restart animation
                 ripple.style.animation = 'ripple-animation 600ms';
             }
+            
+            // Optional: Track link clicks for analytics
+            const linkTitle = this.querySelector('.link-title');
+            if (linkTitle) {
+                trackLinkClick(linkTitle.textContent);
+            }
         });
     });
 });
 
-// Optional: Analytics tracking
+// Optional: Analytics tracking function
 function trackLinkClick(linkName) {
     console.log('Link clicked:', linkName);
     // Add your analytics code here (e.g., Google Analytics, Amplitude, etc.)

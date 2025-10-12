@@ -2,6 +2,7 @@
 :root {
     /* Material Design 3 Color Palette */
     --md-primary: #6750A4;
+    --md-primary-rgb: 103, 80, 164;
     --md-primary-container: #EADDFF;
     --md-on-primary: #FFFFFF;
     --md-on-primary-container: #21005D;
@@ -205,7 +206,7 @@ body {
 .md-ripple {
     position: absolute;
     border-radius: 50%;
-    background-color: rgba(103, 80, 164, 0.3);
+    background-color: rgba(var(--md-primary-rgb), 0.3);
     width: 100px;
     height: 100px;
     margin-top: -50px;

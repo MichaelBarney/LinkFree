@@ -33,11 +33,13 @@ Edit the CSS variables in `style.css` to match your brand:
 
 Update the following in `index.html`:
 
-1. **Profile Photo**: Replace the `src` in the `<img>` tag
+1. **Profile Photo**: Replace the `src` in the `<img>` tag with your own image URL (currently using a placeholder)
 2. **Name & Username**: Update the text in profile card
 3. **Bio**: Modify the profile description
 4. **Links**: Add/remove link cards as needed
 5. **Icons**: Change Material Icons to match your needs (see [Material Icons](https://fonts.google.com/icons))
+
+> **Note**: Make sure to replace the placeholder profile image with your own image URL!
 
 ### Adding New Links
 
