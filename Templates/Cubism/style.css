@@ -15,6 +15,11 @@
     --background: #ecf0f1;
     --text-dark: #2c3e50;
     --text-light: #ecf0f1;
+    --link-bg-start: #ffffff;
+    --link-bg-end: #f8f9fa;
+    --linkedin-color: #0077b5;
+    --instagram-color: #e4405f;
+    --youtube-color: #ff0000;
 }
 
 body {
@@ -211,7 +216,7 @@ body {
     font-weight: 600;
     font-size: 1.1rem;
     position: relative;
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: linear-gradient(135deg, var(--link-bg-start) 0%, var(--link-bg-end) 100%);
 }
 
 .link-content i {
@@ -234,15 +239,15 @@ body {
 }
 
 .link-item:nth-child(3) .link-content i {
-    color: #0077b5;
+    color: var(--linkedin-color);
 }
 
 .link-item:nth-child(4) .link-content i {
-    color: #e4405f;
+    color: var(--instagram-color);
 }
 
 .link-item:nth-child(5) .link-content i {
-    color: #ff0000;
+    color: var(--youtube-color);
 }
 
 /* Responsive Design */
