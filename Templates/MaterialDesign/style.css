@@ -1,0 +1,316 @@
+/* Material Design 3 Theme */
+:root {
+    /* Material Design 3 Color Palette */
+    --md-primary: #6750A4;
+    --md-primary-rgb: 103, 80, 164;
+    --md-primary-container: #EADDFF;
+    --md-on-primary: #FFFFFF;
+    --md-on-primary-container: #21005D;
+    
+    --md-secondary: #625B71;
+    --md-secondary-container: #E8DEF8;
+    --md-on-secondary: #FFFFFF;
+    --md-on-secondary-container: #1D192B;
+    
+    --md-surface: #FFFBFE;
+    --md-surface-variant: #E7E0EC;
+    --md-on-surface: #1C1B1F;
+    --md-on-surface-variant: #49454F;
+    
+    --md-background: #FFFBFE;
+    --md-on-background: #1C1B1F;
+    
+    --md-outline: #79747E;
+    --md-outline-variant: #CAC4D0;
+    
+    /* Material Design Elevation Shadows */
+    --md-elevation-1: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --md-elevation-2: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    --md-elevation-3: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+    --md-elevation-4: 0px 2px 3px rgba(0, 0, 0, 0.3), 0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+    
+    /* Typography - Material Design Type Scale */
+    --md-font-family: 'Roboto', sans-serif;
+    
+    /* Transitions */
+    --md-transition-duration: 300ms;
+    --md-transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--md-font-family);
+    background-color: var(--md-background);
+    color: var(--md-on-background);
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Material Container */
+.md-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+/* Profile Card - Material Design Surface */
+.md-card {
+    background-color: var(--md-surface);
+    border-radius: 24px;
+    padding: 32px 24px;
+    box-shadow: var(--md-elevation-2);
+    margin-bottom: 24px;
+    transition: box-shadow var(--md-transition-duration) var(--md-transition-easing);
+}
+
+.md-card:hover {
+    box-shadow: var(--md-elevation-3);
+}
+
+/* Profile Section */
+.profile-card {
+    text-align: center;
+}
+
+.profile-image-wrapper {
+    margin-bottom: 16px;
+}
+
+.profile-image {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--md-primary-container);
+    box-shadow: var(--md-elevation-2);
+}
+
+.profile-name {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--md-on-surface);
+    margin-bottom: 4px;
+    letter-spacing: 0.15px;
+}
+
+.profile-bio {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--md-primary);
+    margin-bottom: 12px;
+}
+
+.profile-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--md-on-surface-variant);
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+/* Links Container */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Material Design Link Cards */
+.md-link-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background-color: var(--md-surface);
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--md-on-surface);
+    box-shadow: var(--md-elevation-1);
+    transition: all var(--md-transition-duration) var(--md-transition-easing);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.md-link-card:hover {
+    box-shadow: var(--md-elevation-3);
+    transform: translateY(-2px);
+    background-color: var(--md-primary-container);
+}
+
+.md-link-card:active {
+    transform: translateY(0);
+    box-shadow: var(--md-elevation-2);
+}
+
+/* Link Icon */
+.link-icon {
+    color: var(--md-primary);
+    font-size: 24px;
+    flex-shrink: 0;
+    transition: transform var(--md-transition-duration) var(--md-transition-easing);
+}
+
+.md-link-card:hover .link-icon {
+    transform: scale(1.1);
+}
+
+/* Link Content */
+.link-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.link-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--md-on-surface);
+    letter-spacing: 0.1px;
+}
+
+.link-subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--md-on-surface-variant);
+    letter-spacing: 0.4px;
+}
+
+/* Link Arrow */
+.link-arrow {
+    color: var(--md-on-surface-variant);
+    font-size: 20px;
+    flex-shrink: 0;
+    transition: transform var(--md-transition-duration) var(--md-transition-easing);
+}
+
+.md-link-card:hover .link-arrow {
+    transform: translateX(4px);
+    color: var(--md-primary);
+}
+
+/* Material Design Ripple Effect */
+.md-ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(var(--md-primary-rgb), 0.3);
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    top: 50%;
+    left: 50%;
+    animation: ripple-animation 600ms;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 0;
+        transform: scale(4);
+    }
+}
+
+/* Footer */
+.md-footer {
+    text-align: center;
+    margin-top: 32px;
+    padding: 16px;
+    color: var(--md-on-surface-variant);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Responsive Design - Material Breakpoints */
+@media (max-width: 600px) {
+    .md-container {
+        padding: 16px 0;
+    }
+    
+    .md-card {
+        padding: 24px 16px;
+        border-radius: 20px;
+    }
+    
+    .md-link-card {
+        padding: 12px 16px;
+        gap: 12px;
+    }
+    
+    .profile-name {
+        font-size: 24px;
+    }
+    
+    .link-icon {
+        font-size: 22px;
+    }
+    
+    .link-title {
+        font-size: 15px;
+    }
+    
+    .link-subtitle {
+        font-size: 11px;
+    }
+}
+
+/* Tablet and Up */
+@media (min-width: 601px) {
+    body {
+        padding: 32px;
+    }
+    
+    .md-container {
+        padding: 32px 0;
+    }
+}
+
+/* Focus States for Accessibility */
+.md-link-card:focus-visible {
+    outline: 2px solid var(--md-primary);
+    outline-offset: 2px;
+}
+
+.md-link-card:focus {
+    outline: none;
+}
+
+/* State Layer for Interactive Elements */
+.md-link-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--md-primary);
+    opacity: 0;
+    transition: opacity var(--md-transition-duration) var(--md-transition-easing);
+    pointer-events: none;
+}
+
+.md-link-card:hover::before {
+    opacity: 0.08;
+}
+
+.md-link-card:active::before {
+    opacity: 0.12;
+}
