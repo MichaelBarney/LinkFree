@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,12 @@
   <meta property="og:description" content="">
   <link rel="stylesheet" href="styles.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&family=Oswald:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
@@ -26,24 +33,25 @@
 <body>
   <main>
     <div class="wraper">
-    <div class="background"></div>
-    <div class="container">
-      <img src="" class="cover-art" alt="Cover Art" id="cover-art">
-      <h1 id="header-title"></h1>
-      <h2 id="header-artist"></h2>
-      <p data-test="layout-header-description" class="header__description" id="header-description"></p>
-    
-      <div class="platforms" id="platforms-container">
-        <!-- Platform links will be generated here by script.js -->
-      </div>
+      <div class="background"></div>
+      <div class="container">
+        <img src="" class="cover-art" alt="Cover Art" id="cover-art">
+        <h1 id="header-title"></h1>
+        <h2 id="header-artist"></h2>
+        <p data-test="layout-header-description" class="header__description" id="header-description"></p>
 
-  <footer class="lnk-c-footnote__affiliate" id="footer-text"></footer>
-  </div>
-  </div>
+        <div class="platforms" id="platforms-container">
+          <!-- Platform links will be generated here by script.js -->
+        </div>
+
+        <footer class="lnk-c-footnote__affiliate" id="footer-text"></footer>
+      </div>
+    </div>
   </main>
 
   <!-- Configuration and Logic Scripts -->
   <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

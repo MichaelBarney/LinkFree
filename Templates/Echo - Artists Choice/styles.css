@@ -47,19 +47,22 @@ body, html {
 }
 
 h1 {
-  font-family: 'IBMPlexSans', sans-serif;
-  font-size: 20px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 26px;
   font-weight: 700;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 4px 0px;
+  color: #181721;
 }
 
 h2 {
-  font-family: oswald, sans-serif;
-  font-weight: 00;
-  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   letter-spacing: 2px;
-  margin: -3px 0 8px 0;
+  margin: 0 0 8px 0;
   line-height: normal;
+  color: #454b5f;
+  text-transform: uppercase;
 }
 
 .header__description {
@@ -118,21 +121,21 @@ h2 {
 }
 
 .music-service-list-button {
-    
     letter-spacing: .03rem;
     line-height: 16px;
     margin: 15px 0 15px 0;
     border-width: 0px;
     border-radius: 4px;
     background: #ebedf3;
-    padding: 0.9rem 1.6rem;
+    padding: 0.9rem 0; /* Remove horizontal padding, rely on width */
     font-size: 12px;
     font-weight: 700;
     color: #181721;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: fit-content;
+    min-width: 80px; /* Enforce minimum width */
+    text-align: center; /* Ensure text is centered */
   }
 
 .btn-label{
