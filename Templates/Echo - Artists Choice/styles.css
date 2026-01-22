@@ -12,7 +12,6 @@ body, html {
   min-height: 100vh;
   flex-direction: column;
   position: absolute;
-
 }
 
 .background {
@@ -50,7 +49,7 @@ h1 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 26px;
   font-weight: 700;
-  margin: 0px 0px 4px 0px;
+  margin: 0px 0px 2px 0px;
   color: #181721;
 }
 
@@ -61,7 +60,7 @@ h2 {
   letter-spacing: 2px;
   margin: 0 0 8px 0;
   line-height: normal;
-  color: #454b5f;
+  color: #181721;
   text-transform: uppercase;
 }
 
