@@ -1,5 +1,6 @@
 
 # Echo - Artists Choice (LinkFree Template)
+by Sarthak Chaudhary
 
 Echo is a premium, open-source LinkFree template designed specifically for musicians and independent artists. It provides a centralized, aesthetically pleasing hub for your latest releases, streaming platforms, and social media presence.
 

@@ -1,0 +1,156 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  position: absolute;
+
+}
+
+.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('./assets/Tuu\ -\ SAAR.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(12px);
+  -webkit-filter: blur(40px);
+  opacity: 0.5;
+
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers all children horizontally */
+  text-align: center;
+}
+
+.cover-art {
+  width: 240px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+  font-family: 'IBMPlexSans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px 0px 0px 0px;
+}
+
+h2 {
+  font-family: oswald, sans-serif;
+  font-weight: 00;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: -3px 0 8px 0;
+  line-height: normal;
+}
+
+.header__description {
+    font-family: 'IBMPlexSans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #454b5f;
+    line-height: 16px;
+    margin: 0;
+}
+
+.platforms {
+  margin-top: 12px;
+  width: 30%;
+  max-width: 400px;
+  min-width: 300px;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #e6eaf2;
+}
+
+.music-service-list-item {
+  margin: 0;
+  padding: 0 12px;
+  -webkit-transition: background-color .1s ease;
+  transition: background-color .1s ease;
+  border-bottom: 1px solid #e6eaf2;
+}
+
+.music-service-list-item:last-child {
+  border-bottom: none; /* remove border from last item */
+}
+
+.music-service-list-content {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  border-bottom: 1px solid #e6eaf2;
+}
+
+.music-service-list-content:hover {
+    background: #f4f7fb;
+    color: #181721;
+}
+
+.music-service-list-icon {
+  float: left;
+  margin: .5rem;
+  height: 2rem;
+}
+
+.music-service-list-button {
+    
+    letter-spacing: .03rem;
+    line-height: 16px;
+    margin: 15px 0 15px 0;
+    border-width: 0px;
+    border-radius: 4px;
+    background: #ebedf3;
+    padding: 0.9rem 1.6rem;
+    font-size: 12px;
+    font-weight: 700;
+    color: #181721;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: fit-content;
+  }
+
+.btn-label{
+  text-decoration: none;
+  display: inline-block;
+}
+
+.music-service-list-button:hover {
+    background: #d7d9e8;
+    color: #181721;
+}
+
+.lnk-c-footnote__affiliate:not(:first-child) {
+    font-family: 'IBMPlexSans', sans-serif;
+    font-weight: 100;
+    color: #454b5f;
+    font-size: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
