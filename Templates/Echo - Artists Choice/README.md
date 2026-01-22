@@ -1,1 +1,13 @@
-# Song-Link-Hub
+Echo - Artist's Choice 🎨
+Echo is a premium, open-source LinkFree template designed specifically for musicians and independent artists. It provides a centralized, aesthetically pleasing hub for your latest releases, streaming platforms, and social media presence.
+
+✨ Features
+Artist-Centric Design: Clean UI that puts your album art and brand front and center.
+
+Dynamic Streaming Links: Pre-configured buttons for Spotify, Apple Music, YouTube, and more.
+
+Responsive Layout: Fully optimized for mobile (Instagram/TikTok bios) and desktop browsers.
+
+Lightweight & Fast: Built with performance in mind to ensure fans never wait for your links to load.
+
+SEO Optimized: Meta tags ready for better visibility on Google and social sharing previews.
