@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    height:100vh;
+    width:100%;
+    background-color: black;
+    box-shadow: red 0px 30px 60px -12px inset, red 0px 18px 36px -18px inset;
+    background-image: url('images/dragon2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    cursor:url('images/icon-removebg-preview.png'), auto;
+}
+#parent_circle{
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    margin-top:30px;
+    box-shadow: 10px 10px 20px white;
+    overflow:hidden ;
+}
+#child_circle{
+    height:100%;
+    width:100%;
+    border-radius: 50%;
+    background-image: url('images/gif.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: linear 0.5s;
+}
+
+img{
+    height:200px;
+}
+#child_circle:hover{
+    transform: scale(1.3);
+}
+.btns{
+    height: 200px;
+    width:60%;
+    margin:auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.btns button{
+    width:100px;
+    height:40px;
+    background-color: black;
+    box-shadow: orangered 0px 10px 10px 0px;
+    font-weight: 700;
+    cursor:pointer;
+    border-radius: 10px;
+    color: orange;
+}
+a{
+    text-decoration: none;
+    color: orange;
+}
