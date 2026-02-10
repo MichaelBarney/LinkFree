@@ -1,0 +1,101 @@
+/* Style Settings */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --bgColor: #ffffff;
+    --textColor: #333333;
+    --accentColor: #2d2d2d;
+    --font: 'Inter', sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    background-color: var(--bgColor);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+    animation: fadeIn 0.8s ease;
+}
+
+#userPhoto {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 35px auto 25px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease;
+}
+
+#userPhoto:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+#userName {
+    color: var(--textColor);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    letter-spacing: -0.2px;
+    animation: fadeIn 0.8s ease;
+    animation-delay: 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#links {
+    max-width: 550px;
+    width: 100%;
+    display: block;
+    margin: 27px auto;
+    padding: 0 20px;
+}
+
+.link {
+    display: block;
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2.5px solid var(--accentColor);
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.link:nth-child(1) { animation-delay: 0.3s; }
+.link:nth-child(2) { animation-delay: 0.5s; }
+
+.link:hover {
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
