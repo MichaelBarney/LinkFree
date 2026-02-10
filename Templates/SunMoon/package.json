@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "rollup/plugin-terser": "^0.4.4",
+    "cssnano": "^7.0.6",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}
