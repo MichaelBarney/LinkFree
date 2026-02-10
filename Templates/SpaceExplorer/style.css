@@ -1,0 +1,116 @@
+:root {
+  --primary: #6C63FF;
+  --secondary: #FF6584;
+  --background: #1A1A2E;
+  --text: #FFFFFF;
+  --accent: #00B4D8;
+  --font-title: 'Orbitron', sans-serif;
+  --font-body: 'Space Mono', monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--primary);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  margin-top: 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link-box {
+  position: relative;
+  text-decoration: none;
+  color: var(--text);
+  background-color: var(--primary);
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.link-box:hover {
+  transform: translateY(-5px);
+  background-color: var(--accent);
+}
+
+.link-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.link-background {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.link-box:hover .link-background {
+  transform: translateY(5px);
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
