@@ -1,97 +1,256 @@
-/* Style Settings */
-
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+/* ================== Variables ================== */
 :root {
-    --font: 'Karla', 'Karla', sans-serif;
+    --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --main-bg-light: #f0f0f0;
+    --main-bg-dark: #333;
+    --text-light: rgb(99, 99, 99);
+    --text-dark: #E2E4EF;
+    --link-bg: #007BFF;
+    --link-hover-bg: #0056b3;
+    --link-text: #ffffff;
+    --link-hover-text: #E2E4EF;
+    --accent-color: #FF9900;
+    --circle-bg: #666;
+    --background-social-icon: #ccc;
 }
 
+/* ================ General Reset ================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =================== Global ==================== */
 body {
-    background-color: rgb(243, 242, 242);
+    font-family: var(--font);
+    background-color: var(--main-bg-light);
+    transition: background-color 0.5s ease-in-out;
+}
+
+body.dark-mode {
+    background-color: var(--main-bg-dark);
+}
+
+/* Disable text selection and focus outlines */
+body,
+div,
+span,
+p,
+a,
+header,
+footer {
+    user-select: none;
+    outline: none;
+}
+
+/* =================== Header ==================== */
+header {
+    text-align: center;
+    padding: 2.8rem 0;
 }
 
 #userPhoto {
     width: 100px;
     height: 100px;
     display: block;
-    margin: 35px auto 20px;
+    margin: auto;
     border-radius: 50%;
+    box-shadow: 0 0 8px transparent;
+    transition: transform 0.3s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
-#userName {
-    color: rgb(99, 99, 99);
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.25;
-    display: block;
-    font-family: var(--font);
-    width: 100%;
+#userPhoto.loaded {
+    box-shadow: 0 0 8px #474A8A;
+}
+
+#userPhoto:hover {
+    transform: scale(1.1);
+    border-color: var(--circle-bg);
+    box-shadow: 0 0 20px var(--circle-bg);
+}
+
+#name {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: 700;
     text-align: center;
-    text-decoration: none;
+    margin: 1rem 0 0.5rem 0;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid var(--text-light);
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Typing effect animation */
+.typing-effect {
+    max-width: 0;
+    animation: typing 6s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        max-width: 0;
+    }
+
+    to {
+        max-width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+#name.typing-done {
+    animation: blink-caret 0.85s step-end infinite;
+    border-right: 3px solid var(--text-light);
+}
+
+#bio {
+    color: var(--text-light);
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* ==================== Main ===================== */
+main {
+    display: flex;
+    justify-content: center;
 }
 
 #links {
     max-width: 675px;
-    width: auto;
-    display: block;
-    margin: 27px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
 }
 
+/* Link styling */
 .link {
     display: block;
-    background-color: rgb(66, 110, 255);
-    color: #fff;
-    font-family: var(--font);
-    text-align: center;
-    margin-bottom: 20px;
+    background-color: var(--link-bg);
+    color: var(--link-text);
     padding: 17px;
-    text-decoration: none;
+    text-align: center;
     font-size: 1rem;
     font-weight: bold;
-    transition: all .25s cubic-bezier(.08, .59, .29, .99);
-    border: solid var(--accentColor) 2px;
+    border: 2px solid var(--accent-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Hover effect */
+.link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(to right, var(--link-bg) 0%, var(--link-hover-bg) 50%, var(--link-bg) 100%);
+    transition: left 0.5s ease;
+    z-index: -1;
+}
+
+.link:hover::before {
+    left: 0;
+}
+
+.link span {
+    position: relative;
+    z-index: 1;
 }
 
 .link:hover {
-    background-color: #fff;
-    color: rgb(66, 110, 255);
-    border: solid rgb(66, 110, 255) 2px;
+    color: var(--link-hover-text);
+    border-color: var(--link-hover-text);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* =================== Footer ==================== */
 .footer {
     text-align: center;
     font-size: 1.3rem;
+    margin-top: 2rem;
 }
 
-.footer a {
-    text-decoration:none;
+#socialMedia {
+    margin-bottom: 1rem;
 }
 
-.circulo {
-    background: rgb(221, 221, 221);
-    border-radius: 52px;
+#socialMedia a {
+    text-decoration: none;
+    color: var(--text-light);
+    transition: color 0.3s ease-in-out;
+    margin: 0.4rem;
+}
+
+#socialMedia a:hover {
+    color: var(--accent-color);
+}
+
+.circle {
+    background: var(--background-social-icon);
     width: 38px;
     height: 38px;
-    text-align: center;
-    font-size: 10px;
-    color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s, transform 0.3s;
 }
 
-.circulo:hover {
-    background: rgb(66, 110, 255);
-    color: rgb(255, 255, 255);
-    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
-    -moz-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
-    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
+.circle:hover {
+    background: var(--circle-bg);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
+#username {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+/* ================= Night Mode ================== */
 .night_mode {
     position: fixed;
     top: 25px;
     right: 30px;
-    z-index: 10000000;
-    color: #585858;
+    z-index: 1000;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
 }
 
 .night_mode:hover {
-    cursor: pointer;
+    transform: rotate(25deg);
+    text-shadow: 0 0 10px #8892bf50;
+}
+
+body.dark-mode #name,
+body.dark-mode #bio,
+body.dark-mode #username {
+    color: var(--text-dark);
+}
+
+body.dark-mode .link {
+    filter: grayscale(100%);
+}
+
+body.dark-mode .circle {
+    filter: grayscale(100%);
 }
