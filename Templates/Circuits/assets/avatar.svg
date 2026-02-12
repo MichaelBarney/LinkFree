@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+    </style>
+  </defs>
+  <rect width="200" height="200" fill="#0d1117" rx="100"/>
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#008f11" stroke-width="2"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#00ff41" stroke-width="1" stroke-dasharray="10 5"/>
+  <text x="50%" y="50%" text-anchor="middle" dy=".35em" fill="#00ff41" font-family="'Share Tech Mono', monospace, sans-serif" font-size="80" font-weight="bold">SC</text>
+</svg>

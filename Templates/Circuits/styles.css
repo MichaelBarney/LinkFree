@@ -1,0 +1,275 @@
+/* Circuit Theme Variables */
+:root {
+  --bg-color: #050a0f;
+  --grid-color: rgba(0, 255, 65, 0.05); /* Very faint green grid */
+  --circuit-green: #00ff41;
+  --circuit-dark-green: #008f11;
+  --circuit-cyan: #0ff;
+  --chip-bg: #0d1117;
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --glow-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+  --border-radius: 4px; /* Sharper corners for tech look */
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
+  background-image: 
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 20px 20px; /* Technical Grid */
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Optional: Scanline effect overlay */
+body::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+/* The Main "Chip" Container */
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--chip-bg);
+  border: 1px solid var(--circuit-dark-green);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+  box-shadow: 
+    0 0 15px rgba(0, 255, 65, 0.1),
+    inset 0 0 20px rgba(0, 0, 0, 0.8);
+  position: relative;
+  max-width: 450px;
+  width: 90%;
+}
+
+/* Circuit Traces (Decorative corners) */
+.container::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  background: linear-gradient(45deg, var(--circuit-green), transparent, var(--circuit-green));
+  z-index: -1;
+  border-radius: 6px;
+  opacity: 0.3;
+}
+
+/* Corner screws/pins */
+.container::after {
+  content: '';
+  position: absolute;
+  top: 10px; left: 10px;
+  width: 8px; height: 8px;
+  background: #333;
+  box-shadow: 0 0 2px #000;
+  border-radius: 50%;
+  box-shadow: 
+    calc(100% - 20px) 0 0 #333,
+    0 calc(100% - 20px) 0 #333,
+    calc(100% - 20px) calc(100% - 20px) 0 #333; /* 4 corners hack */
+}
+
+.cover-art {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Circular port style */
+  margin-bottom: 24px;
+  border: 2px solid var(--circuit-green);
+  box-shadow: 0 0 15px var(--circuit-green);
+  object-fit: cover;
+  position: relative;
+  z-index: 4;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0px 0px 8px 0px;
+  color: var(--circuit-green);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px var(--circuit-green);
+}
+
+h2 {
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0 0 16px 0;
+  color: var(--circuit-cyan);
+  text-transform: uppercase;
+}
+
+.header__description {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: 24px;
+  max-width: 300px;
+}
+
+.platforms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  z-index: 3;
+}
+
+/* Tech-styled List Items */
+.music-service-list-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.music-service-list-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+}
+
+.music-service-list-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 64px;
+  background: rgba(0, 20, 0, 0.4);
+  border: 1px solid var(--circuit-dark-green);
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.music-service-list-content::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--circuit-dark-green);
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.music-service-list-content:hover {
+  background: rgba(0, 255, 65, 0.05);
+  border-color: var(--circuit-green);
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+  transform: translateX(4px);
+}
+
+.music-service-list-content:hover::before {
+  width: 100%;
+  background: rgba(0, 255, 65, 0.1);
+  z-index: 0;
+}
+
+.music-service-list-icon {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  z-index: 1;
+  filter: grayscale(100%) brightness(1.2); /* Techy grayscale look */
+  transition: filter 0.3s ease;
+}
+
+.music-service-list-content:hover .music-service-list-icon {
+  filter: grayscale(0%) brightness(1); /* Reveal color on hover */
+}
+
+/* New Service Name Style */
+.service-name {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 16px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.music-service-list-button {
+  z-index: 1;
+  background: transparent;
+  border: 1px solid var(--circuit-green);
+  color: var(--circuit-green);
+  padding: 8px 16px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  min-width: 80px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.music-service-list-button:hover {
+  background: var(--circuit-green);
+  color: #000;
+  box-shadow: 0 0 10px var(--circuit-green);
+}
+
+.btn-label {
+  text-decoration: none;
+  display: block;
+}
+
+.lnk-c-footnote__affiliate {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  color: var(--text-secondary);
+  margin-top: 32px;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Remove original background div since we use body gradients */
+.background {
+  display: none;
+}
