@@ -40,6 +40,27 @@ const config = {
       icon: "./assets/social-logo/scholar.svg",
       actionText: "View",
       title: "Google Scholar"
+    },
+    {
+      platform: "website",
+      url: "https://sarthakchaudhary.me/",
+      icon: "./assets/social-logo/website.svg",
+      actionText: "Visit",
+      title: "Website"
+    },
+    {
+      platform: "leetcode",
+      url: "https://leetcode.com/",
+      icon: "./assets/social-logo/leetcode.svg",
+      actionText: "View",
+      title: "LeetCode"
+    },
+    {
+      platform: "medium",
+      url: "https://medium.com/",
+      icon: "./assets/social-logo/medium.svg",
+      actionText: "Read",
+      title: "Medium"
     }
   ]
 };
