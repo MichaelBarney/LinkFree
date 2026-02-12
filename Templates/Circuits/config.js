@@ -10,8 +10,8 @@ const config = {
   ogImage: "./assets/demo-cover.jpg",
 
   // Artist & Track Details
-  artistName: "Sarthak Chaudhary",
-  trackName: "Profile",
+  artistName: "AI, ML, Software Engineer",
+  trackName: "Sarthak Chaudhary",
   subDescription: "Connect & Follow",
   coverArt: "./assets/demo-cover.jpg",
 

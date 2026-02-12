@@ -112,7 +112,7 @@ body::after {
 
 h1 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
   margin: 0px 0px 8px 0px;
   color: var(--circuit-green);
@@ -124,7 +124,7 @@ h1 {
 h2 {
   font-family: 'Share Tech Mono', monospace;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 1px;
   margin: 0 0 16px 0;
   color: var(--circuit-cyan);
@@ -213,6 +213,19 @@ h2 {
 
 .music-service-list-content:hover .music-service-list-icon {
   filter: grayscale(0%) brightness(1); /* Reveal color on hover */
+}
+
+/* New Service Name Style */
+.service-name {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 16px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 1;
 }
 
 .music-service-list-button {
