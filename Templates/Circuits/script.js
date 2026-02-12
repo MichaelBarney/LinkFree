@@ -6,19 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 1. Update Meta Tags
   document.title = config.pageTitle;
-  setMetaContent("name", "description", config.pageDescription);
-  setMetaContent("name", "keywords", config.pageKeywords);
-
-  // Open Graph
-  setMetaContent("property", "og:title", config.ogTitle);
-  setMetaContent("property", "og:description", config.ogDescription);
-  setMetaContent("property", "og:image", config.ogImage);
 
   // 2. Update Visible Text & Images
   updateElementText("header-title", config.trackName);
   updateElementText("header-artist", config.artistName);
   updateElementText("header-description", config.subDescription);
-  updateElementText("footer-text", config.footerText);
+  updateElementText("header-description", config.subDescription);
+
+  const footerElement = document.getElementById("footer-text");
+  if (footerElement) {
+    footerElement.innerHTML = config.footerText;
+  }
 
   // Cover Art
   const coverArtImg = document.getElementById("cover-art");

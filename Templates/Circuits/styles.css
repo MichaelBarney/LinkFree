@@ -64,6 +64,7 @@ body::after {
   border: 1px solid var(--circuit-dark-green);
   padding: 40px;
   border-radius: var(--border-radius);
+  margin-bottom: 20px;
   box-shadow: 
     0 0 15px rgba(0, 255, 65, 0.1),
     inset 0 0 20px rgba(0, 0, 0, 0.8);

@@ -13,10 +13,10 @@ const config = {
   artistName: "AI, ML, Software Engineer",
   trackName: "Sarthak Chaudhary",
   subDescription: "Connect & Follow",
-  coverArt: "./assets/demo-cover.jpg",
+  coverArt: "./assets/avatar.svg",
 
   // Footer
-  footerText: "All Rights Reserved - Sarthak Chaudhary \u00A9 2026.",
+  footerText: "Circuits by <a href='https://easydocx.com' target='_blank' style='color: inherit; text-decoration: underline;'>EasyDocx</a>",
 
   // Links required for generating the buttons
   links: [
