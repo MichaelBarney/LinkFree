@@ -1,0 +1,498 @@
+/* ===== CSS Variables ===== */
+:root {
+    /* Dark theme defaults */
+    --body-bg: #16161a;
+    --bubble-bg: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(140, 140, 160, 0.2) 60%, rgba(0, 0, 0, 0.25));
+    --bubble-shadow: inset -10px -10px 30px rgba(0, 0, 0, 0.25), 0 20px 40px rgba(0, 0, 0, 0.3);
+    --bubble-highlight: rgba(255, 255, 255, 0.9);
+
+    /* Card – TRANSPARENT BACKGROUND */
+    --card-bg: transparent;
+    --card-border: rgba(255, 255, 255, 0.15);
+    --card-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+
+    /* Text */
+    --text-primary: #ffffff;
+    --text-secondary: #d0d0d4;
+    --text-muted: #b8b8bc;
+    --text-footnote: rgba(255, 255, 255, 0.35);
+    --text-shadow-dark: 0 4px 16px rgba(0, 0, 0, 0.8);
+
+    /* Social icons */
+    --social-bg: rgba(255, 255, 255, 0.08);
+    --social-border: rgba(255, 255, 255, 0.12);
+    --social-color: #e0e0e4;
+    --social-hover-bg: rgba(255, 255, 255, 0.18);
+    --social-hover-color: #ffffff;
+
+    /* Divider */
+    --divider-color: rgba(255, 255, 255, 0.12);
+
+    /* Avatar border */
+    --avatar-border: rgba(255, 255, 255, 0.40);
+
+    /* Toggle button */
+    --toggle-bg: rgba(255, 255, 255, 0.08);
+    --toggle-border: rgba(255, 255, 255, 0.12);
+    --toggle-color: #e0e0e4;
+    --toggle-hover-bg: rgba(255, 255, 255, 0.18);
+}
+
+/* ===== Light theme overrides ===== */
+body.light-theme {
+    --body-bg: #dedee2;
+    --bubble-bg: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.95), rgba(180, 180, 200, 0.4) 60%, rgba(0, 0, 0, 0.05));
+    --bubble-shadow: inset -10px -10px 30px rgba(0, 0, 0, 0.05), 0 20px 40px rgba(0, 0, 0, 0.08);
+    --bubble-highlight: rgba(255, 255, 255, 1);
+
+    /* Card – TRANSPARENT BACKGROUND */
+    --card-bg: transparent;
+    --card-border: rgba(0, 0, 0, 0.10);
+    --card-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+
+    --text-primary: #1a1a1e;
+    --text-secondary: #3a3a3e;
+    --text-muted: #4a4a4e;
+    --text-footnote: rgba(0, 0, 0, 0.30);
+    --text-shadow-dark: 0 4px 16px rgba(255, 255, 255, 0.9);
+
+    --social-bg: rgba(0, 0, 0, 0.04);
+    --social-border: rgba(0, 0, 0, 0.08);
+    --social-color: #3a3a3e;
+    --social-hover-bg: rgba(0, 0, 0, 0.10);
+    --social-hover-color: #1a1a1e;
+
+    --divider-color: rgba(0, 0, 0, 0.10);
+
+    --avatar-border: rgba(0, 0, 0, 0.20);
+
+    --toggle-bg: rgba(0, 0, 0, 0.04);
+    --toggle-border: rgba(0, 0, 0, 0.08);
+    --toggle-color: #3a3a3e;
+    --toggle-hover-bg: rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    padding: 1.5rem;
+    background-color: var(--body-bg);
+    transition: background-color 0.4s ease;
+    overflow-x: hidden;
+}
+
+/* ===== 3D Bubbles Container ===== */
+.bubbles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* ===== 3D Bubble Styles ===== */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--bubble-bg);
+    box-shadow: var(--bubble-shadow);
+    animation: floatBubble 8s infinite alternate ease-in-out;
+    will-change: transform;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Bubble pseudo-element for glossy highlight */
+.bubble::after {
+    content: '';
+    position: absolute;
+    top: 12%;
+    left: 22%;
+    width: 35%;
+    height: 25%;
+    background: radial-gradient(circle, var(--bubble-highlight) 0%, transparent 100%);
+    border-radius: 50%;
+    transform: rotate(-25deg);
+    filter: blur(1px);
+    transition: background 0.4s ease;
+}
+
+/* Individual bubble positioning & sizing */
+.bubble-1 {
+    width: 280px;
+    height: 280px;
+    top: -60px;
+    left: -100px;
+    animation-duration: 10s;
+}
+
+.bubble-2 {
+    width: 180px;
+    height: 180px;
+    bottom: 80px;
+    right: -40px;
+    animation-duration: 14s;
+}
+
+.bubble-3 {
+    width: 120px;
+    height: 120px;
+    top: 45%;
+    left: 75%;
+    animation-duration: 7s;
+}
+
+.bubble-4 {
+    width: 220px;
+    height: 220px;
+    bottom: -60px;
+    left: 15%;
+    animation-duration: 12s;
+}
+
+.bubble-5 {
+    width: 90px;
+    height: 90px;
+    top: 12%;
+    right: 18%;
+    animation-duration: 6s;
+}
+
+.bubble-6 {
+    width: 160px;
+    height: 160px;
+    top: 60%;
+    left: -50px;
+    animation-duration: 9s;
+}
+
+.bubble-7 {
+    width: 160px;
+    height: 160px;
+    top: 40%;
+    left: 50%;
+    animation-duration: 9s;
+}
+
+/* Floating animation */
+@keyframes floatBubble {
+    0% {
+        transform: translateY(0px) scale(1);
+    }
+    100% {
+        transform: translateY(-40px) scale(1.03);
+    }
+}
+
+/* ===== Theme Toggle Button ===== */
+.theme-toggle {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    z-index: 10;
+    background: var(--toggle-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--toggle-border);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--toggle-color);
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.theme-toggle:hover {
+    background: var(--toggle-hover-bg);
+    transform: scale(1.05);
+    border-color: var(--social-border);
+}
+
+.theme-toggle:active {
+    transform: scale(0.92);
+}
+
+/* ===== Glassmorphism Card (Transparent BG) ===== */
+.card {
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    width: 100%;
+    padding: 2.2rem 1.8rem 2.5rem;
+    border-radius: 3rem;
+    /* TRANSPARENT BACKGROUND + BLUR = PURE GLASS */
+    background: var(--card-bg);
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.3);
+}
+
+body.light-theme .card:hover {
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Profile Picture ===== */
+.avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1.2rem;
+    border: 2px solid var(--avatar-border);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    background: #2a2a2e;
+    transition: border-color 0.3s ease;
+}
+
+/* ===== Name & Profession ===== */
+.name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.5px;
+    margin-bottom: 0.3rem;
+    text-shadow: var(--text-shadow-dark);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.profession {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: var(--toggle-bg);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: inline-block;
+    padding: 0.4rem 1.6rem;
+    border-radius: 40px;
+    margin: 0.2rem auto 1.2rem;
+    border: 1px solid var(--card-border);
+    letter-spacing: 0.4px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ===== Divider ===== */
+.divider {
+    width: 70px;
+    height: 2px;
+    margin: 0.2rem auto 1.4rem;
+    background: var(--divider-color);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+/* ===== Bio ===== */
+.bio {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 1.8rem;
+    line-height: 1.6;
+    padding: 0 0.4rem;
+    font-weight: 400;
+    text-shadow: var(--text-shadow-dark);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* ===== Social Icons ===== */
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 0.4rem;
+}
+
+.social-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: var(--social-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--social-border);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: var(--social-color);
+    font-size: 1.7rem;
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+.social-list a i {
+    line-height: 1;
+}
+
+.social-list a:hover {
+    background: var(--social-hover-bg);
+    transform: scale(1.08) translateY(-4px);
+    border-color: var(--social-border);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    color: var(--social-hover-color);
+}
+
+.social-list a:active {
+    transform: scale(0.92);
+}
+
+/* ===== Footer ===== */
+.footnote {
+    margin-top: 2rem;
+    font-size: 0.75rem;
+    color: var(--text-footnote);
+    letter-spacing: 0.5px;
+    border-top: 1px solid var(--divider-color);
+    padding-top: 1.4rem;
+    font-weight: 500;
+    text-shadow: var(--text-shadow-dark);
+    transition: color 0.3s ease, border-color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footnote a {
+    text-decoration: none;
+    color: var(--text-secondary);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 420px) {
+    .card {
+        padding: 1.8rem 1.2rem 2rem;
+        border-radius: 2.2rem;
+    }
+
+    .avatar {
+        width: 105px;
+        height: 105px;
+    }
+
+    .name {
+        font-size: 1.6rem;
+    }
+
+    .social-list {
+        gap: 0.9rem;
+    }
+
+    .social-list a {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+    .theme-toggle {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    /* Adjust bubble sizes for mobile */
+    .bubble-1 {
+        width: 160px;
+        height: 160px;
+        top: -30px;
+        left: -50px;
+    }
+
+    .bubble-2 {
+        width: 120px;
+        height: 120px;
+        bottom: 40px;
+        right: -20px;
+    }
+
+    .bubble-3 {
+        width: 80px;
+        height: 80px;
+        top: 50%;
+        left: 70%;
+    }
+
+    .bubble-4 {
+        width: 140px;
+        height: 140px;
+        bottom: -30px;
+        left: 5%;
+    }
+
+    .bubble-5 {
+        width: 60px;
+        height: 60px;
+        top: 8%;
+        right: 10%;
+    }
+
+    .bubble-6 {
+        width: 100px;
+        height: 100px;
+        top: 65%;
+        left: -30px;
+    }
+
+    .bubble-7 {
+        width: 100px;
+        height: 100px;
+        top: 40%;
+        left: 50%;
+    }
+}
+
+@media (min-width: 600px) {
+    .card {
+        padding: 2.8rem 2.5rem 3rem;
+        max-width: 440px;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name {
+        font-size: 2.4rem;
+    }
+
+    .social-list a {
+        width: 64px;
+        height: 64px;
+        font-size: 2rem;
+    }
+
+    .theme-toggle {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+}
