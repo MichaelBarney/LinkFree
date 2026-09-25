@@ -1,0 +1,454 @@
+/* ==========================================================================
+   Corkboard - hand-drawn / sketchbook LinkFree template
+   Nothing here is meant to be perfect. Borders wobble, cards tilt, and
+   shadows are hard offset ink rather than soft light.
+   ========================================================================== */
+
+:root {
+    /* ---- Palette ---- */
+    --bg: #fdfbf7;
+    --fg: #2d2d2d;
+    --muted: #e5e0d8;
+    --accent: #ff4d4d;
+    --accent-secondary: #2d5da1;
+
+    /* ---- Type ---- */
+    --font-heading: "Kalam", "Comic Sans MS", cursive;
+    --font-body: "Patrick Hand", "Segoe Print", cursive;
+
+    /* ---- Ink shadow ---- */
+    --ink-shadow: 4px 4px 0px var(--fg);
+    --ink-shadow-lg: 8px 8px 0px var(--fg);
+
+    /* ---- Motion ---- */
+    --snap: 100ms ease;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0 1.25rem 3rem;
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    line-height: 1.5;
+
+    /* Paper grain: three offset dot fields at low opacity so the repeat
+       never lines up into a visible pattern. */
+    background-color: var(--bg);
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(45, 45, 45, 0.035) 0 0.8px, transparent 0.9px),
+        radial-gradient(circle at 70% 60%, rgba(45, 45, 45, 0.03) 0 0.7px, transparent 0.8px),
+        radial-gradient(circle at 45% 85%, rgba(45, 45, 45, 0.025) 0 0.9px, transparent 1px);
+    background-size: 23px 23px, 35px 35px, 28px 28px;
+    background-position: 0 0, 11px 7px, 4px 19px;
+}
+
+/* The page itself is a sheet of paper with a wobbly edge, not a rectangle. */
+.paper {
+    max-width: 34rem;
+    margin: 2.5rem auto 0;
+    padding: 2.25rem 1.5rem 1.5rem;
+    background-color: #ffffff;
+    border: 3px solid var(--fg);
+    border-radius: 18px 26px 20px 28px;
+    box-shadow: var(--ink-shadow-lg);
+}
+
+.icon-sprite {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Wobbly border utilities
+   Deliberately never a single uniform value. Components mix and match
+   these (and add their own) so no two surfaces look stamped out.
+   -------------------------------------------------------------------------- */
+
+.wobbly {
+    border-radius: 12px 18px 14px 20px;
+}
+
+.wobbly-md {
+    border-radius: 16px 24px 18px 22px;
+}
+
+.wobbly-circle {
+    border-radius: 52% 48% 50% 50% / 50% 52% 48% 50%;
+}
+
+/* --------------------------------------------------------------------------
+   Profile header
+   -------------------------------------------------------------------------- */
+
+.profile {
+    position: relative;
+    text-align: center;
+}
+
+.avatar-frame {
+    width: 118px;
+    height: 118px;
+    margin: 0 auto 0.75rem;
+    padding: 4px;
+    background-color: var(--muted);
+    border: 3px solid var(--fg);
+    box-shadow: var(--ink-shadow);
+    transform: rotate(-1.5deg);
+}
+
+.avatar-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    background-color: var(--muted);
+}
+
+#userName {
+    margin: 0.35rem 0 0;
+    font-family: var(--font-heading);
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+}
+
+.squiggle {
+    display: block;
+    width: min(220px, 78%);
+    height: 14px;
+    margin: 0.15rem auto 0.5rem;
+    color: var(--accent);
+}
+
+.handle {
+    margin: 0;
+    color: var(--accent-secondary);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.bio {
+    margin: 0.75rem auto 0;
+    max-width: 26rem;
+    color: var(--fg);
+}
+
+/* Ornamental doodles - purely decorative, first thing to go on mobile. */
+.doodle {
+    position: absolute;
+    color: var(--accent-secondary);
+    pointer-events: none;
+}
+
+.doodle--star {
+    top: -0.75rem;
+    right: -0.5rem;
+    width: 54px;
+    height: 54px;
+    opacity: 0.75;
+    transform: rotate(9deg);
+    animation: doodle-bob 6s ease-in-out infinite;
+}
+
+@keyframes doodle-bob {
+    0%, 100% { transform: rotate(9deg) translateY(0); }
+    50%      { transform: rotate(6deg) translateY(-4px); }
+}
+
+/* --------------------------------------------------------------------------
+   Link cards
+   -------------------------------------------------------------------------- */
+
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.05rem;
+    margin: 2rem 0 1.75rem;
+}
+
+.link-card {
+    --tilt: 0deg;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.9rem 1.1rem;
+    color: var(--fg);
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    border: 3px solid var(--fg);
+    border-radius: 14px 20px 13px 19px;
+    box-shadow: var(--ink-shadow);
+    transform: rotate(var(--tilt));
+    transition: transform var(--snap), box-shadow var(--snap), background-color var(--snap);
+}
+
+/* Alternating scatter, applied by script.js. */
+.link-card.is-tilt-left  { --tilt: -1deg; }
+.link-card.is-tilt-right { --tilt: 1deg; }
+
+.link-card:hover,
+.link-card:focus-visible {
+    box-shadow: 2px 2px 0px var(--fg);
+    background-color: var(--bg);
+}
+
+.link-card:active {
+    box-shadow: 0 0 0 var(--fg);
+    transform: translate(4px, 4px) rotate(var(--tilt));
+}
+
+/* A couple of cards get a one-shot wiggle so it stays a treat, not noise. */
+.link-card.is-jiggle:hover {
+    animation: jiggle 280ms ease;
+}
+
+@keyframes jiggle {
+    0%   { transform: rotate(var(--tilt)); }
+    35%  { transform: rotate(calc(var(--tilt) - 1.5deg)); }
+    70%  { transform: rotate(calc(var(--tilt) + 1.5deg)); }
+    100% { transform: rotate(var(--tilt)); }
+}
+
+.link-card__icon {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    color: var(--fg);
+    background-color: var(--muted);
+    border: 2.5px solid var(--fg);
+    border-radius: 46% 54% 48% 52% / 52% 46% 54% 48%;
+}
+
+.link-card__icon svg,
+.link-card__icon img {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+.link-card__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.link-card__label {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.link-card__note {
+    flex: 0 0 auto;
+    color: var(--accent-secondary);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    white-space: nowrap;
+    transform: rotate(-2deg);
+}
+
+/* --------------------------------------------------------------------------
+   Tape and thumbtack decorations
+   -------------------------------------------------------------------------- */
+
+.link-card[data-deco="tape"]::before {
+    content: "";
+    position: absolute;
+    top: -0.7rem;
+    left: 1.6rem;
+    width: 2.6rem;
+    height: 1.1rem;
+    background-color: rgba(229, 224, 216, 0.9);
+    border: 1.5px solid rgba(45, 45, 45, 0.35);
+    transform: rotate(-6deg);
+    pointer-events: none;
+}
+
+.link-card[data-deco="tack"]::after {
+    content: "";
+    position: absolute;
+    top: -0.5rem;
+    right: 1.5rem;
+    width: 0.85rem;
+    height: 0.85rem;
+    background-color: var(--accent);
+    border: 2px solid var(--fg);
+    border-radius: 50% 50% 46% 54%;
+    box-shadow: 2px 2px 0 rgba(45, 45, 45, 0.35);
+    pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   Testimonials - speech bubbles
+   -------------------------------------------------------------------------- */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 0 1.75rem;
+}
+
+.bubble {
+    position: relative;
+    margin: 0;
+    padding: 0.9rem 1.1rem;
+    background-color: var(--muted);
+    border: 3px solid var(--fg);
+    border-radius: 18px 26px 22px 14px;
+    box-shadow: 4px 4px 0px var(--fg);
+    transform: rotate(0.6deg);
+}
+
+.bubble:nth-child(even) {
+    transform: rotate(-0.8deg);
+    border-radius: 24px 16px 14px 22px;
+}
+
+/* Tail */
+.bubble::after {
+    content: "";
+    position: absolute;
+    left: 2.2rem;
+    bottom: -0.85rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--muted);
+    border-right: 3px solid var(--fg);
+    border-bottom: 3px solid var(--fg);
+    transform: rotate(45deg) skew(6deg, 6deg);
+}
+
+.bubble__quote {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+}
+
+.bubble__author {
+    margin: 0.35rem 0 0;
+    color: var(--accent-secondary);
+    font-size: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+
+.site-footer {
+    padding-top: 1.25rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--fg);
+    border-top: 2.5px dashed var(--muted);
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* Author credit - smaller than the footer text, but still clearly legible. */
+.site-footer .credit {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+}
+
+/* Wavy underline for prose links instead of a hard rule. */
+.site-footer a,
+.testimonials a {
+    color: var(--accent-secondary);
+    text-decoration: underline wavy var(--accent);
+    text-underline-offset: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Focus - kept loud and obvious on purpose. Never trade this for looks.
+   -------------------------------------------------------------------------- */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--accent-secondary);
+    outline-offset: 3px;
+    border-radius: 12px 18px 14px 20px;
+}
+
+.link-card:focus-visible {
+    outline-offset: 5px;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive: hide the ornament, keep every functional thing at full size.
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+    body {
+        padding: 0 0.9rem 2rem;
+    }
+
+    .paper {
+        margin-top: 1.25rem;
+        padding: 1.5rem 1.1rem 1.25rem;
+        border-radius: 16px 22px 18px 24px;
+        box-shadow: var(--ink-shadow);
+    }
+
+    /* Purely decorative: gone, not shrunk. */
+    .doodle,
+    .squiggle,
+    .link-card::before,
+    .link-card::after {
+        display: none;
+    }
+
+    /* Flatten the scatter so text stays dead-level and readable. */
+    .link-card,
+    .link-card.is-tilt-left,
+    .link-card.is-tilt-right,
+    .bubble,
+    .bubble:nth-child(even),
+    .avatar-frame {
+        transform: none;
+    }
+
+    .link-card.is-jiggle:hover {
+        animation: none;
+    }
+
+    #userName {
+        font-size: 1.75rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}
